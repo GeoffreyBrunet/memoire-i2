@@ -1,5 +1,6 @@
 \documentclass[a4paper, 11pt]{report}
 
+\usepackage{hyperref}
 \usepackage[french]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[OT1]{fontenc}
@@ -96,11 +97,25 @@ Le reste des collaborateurs sont des consultants apportant leurs expertises dans
 \newline
 \newline
 Je suis donc actuellement développeur au sein du pôle R\&D, et travaille sur différents projets et $microservices^{12}$, dans le but d’améliorer ceux existants, résoudre des bugs et en créer de nouveaux lorsque cela est nécessaire.
-\section{Présentation de l'étudiant}
-\includepdf[,pages=-,pagecommand={}]{CV-Geoffrey-Brunet.pdf}
+
+\begin{figure}
+  \section{Présentation de l'étudiant}
+  \includegraphics[scale=0.8, trim=2cm 0 0 0, clip]{CV-Geoffrey-Brunet.pdf}%
+\end{figure}
 
 \section{Activités de la structure}
-
+Quartz-Insight est une entreprise spécialisée dans la Business Intelligence (BI) et l'Enterprise Performance Management (EPM).
+Elle propose une gamme complète d'activités et de services destinés à aider les entreprises à optimiser leur gestion et à prendre des décisions éclairées. Voici un aperçu de nos principales activités:
+\begin{enumerate}
+  \item \textbf{Consulting en BI et EPM}: Quartz-Insight offre des services de consulting personnalisés pour accompagner les entreprises dans leur utilisation efficace des outils de BI et d'EPM tels que les serveurs Essbase, les cubes OLAP et Hyperion Planning.
+    \ Les consultants de Quartz-Insight travaillent en étroite collaboration avec les clients pour comprendre leurs besoins spécifiques et proposer des solutions adaptées à leurs objectifs.
+  \item \textbf{Réalisation de tests de charges sur des infrastructures de BI et d’EPM}: nous proposons une prestation de tests de charges pour les infrastructures BI et EPM des entreprises, avec divers scénarios possibles, pour tester les limites du matériel physique comme du logiciel.
+    \ Le produit final est un fichier PDF contenant les résultats sous forme de graphs, ainsi qu’une proposition d’actions à mettre en place pour améliorer la résilience de l’infrastructure.
+  \item \textbf{Développement de Qibates}: développement d’un logiciel en mode SAAS (Software As A Service) pour explorer diverses sources de bases de données multidimensionnelles.
+    \ Un abonnement par licence par utilisateur est proposé à la vente, pour une utilisation sur Microsoft Excel ou Google Sheets, avec des accès à des sources de données diverse grâce à des connecteurs développés par nos soins. 
+  \item \textbf{Conseil sur la transition RSE des entreprises}: après une implementation d’actions RSE (Responsabilité sociétale des entreprises) et de formations pour notre entreprise, nous avons décidé de proposer à nos clients une formation comprenant tous les principaux axes des actions mises en place.
+    \ Nos proposons aussi une animation pour la fresque du climat, pour démontrer l’implication écologique pour les personnes comme pour les entreprises.
+\end{enumerate}
 
 \section{Présentation des activités confiées}
 Voici une liste contenant les tâches qui m’ont été confiées durant mon alternance chez Quartz-Insight:
@@ -172,7 +187,32 @@ Avec son approche personnalisée, son agilité et son engagement continu envers 
 La taille réduite de l'entreprise lui permet également de maintenir une culture d'entreprise forte et un haut niveau de service client, ce qui contribue à sa réputation positive.
 
 \subsection{Le service et ses évolutions}
+Grâce à la vente de licences en constante augmentation, auprès d’une clientèle de plus en plus variée, la pérennité du service est assurée. Mais de nouvelles contraintes et nouvelles améliorations peuvent être mises en place:
+\begin{enumerate}
+  \item \textbf{Ajout de nouveaux connecteurs et intégration de nouvelles sources de données}:
+    \ En permettant l'intégration de nouvelles sources de données, telles que des bases de données supplémentaires, des services cloud ou des API externes, les utilisateurs auront une plus grande flexibilité dans l'exploration de diverses sources.
+  \item \textbf{Amélioration de la supervision}:
+    \ En intégrant des fonctionnalités de supervision avancées, telles que des tableaux de bord de surveillance en temps réel, des alertes automatisées en cas d'anomalies ou de dépassement de seuils, et des rapports de performance détaillés, les administrateurs et responsables pourront superviser efficacement les performances et l'utilisation de Qibates.
+    \ Cela facilitera la détection précoce des problèmes, l'optimisation des ressources et la prise de décisions basées sur des données précises.
+  \item \textbf{Élaboration d'un Plan de Reprise d'Activité (PRA)}:
+    \ Pour assurer la continuité des opérations en cas d'incident majeur ou de catastrophe, il est essentiel de développer un PRA solide pour Qibates.
+    \ Ce plan devrait inclure des procédures détaillées pour la sauvegarde régulière des données, la restauration du système, la reprise des opérations critiques, la communication avec les parties prenantes, ainsi que des tests réguliers pour s'assurer de l'efficacité du plan.
+    \ Un PRA bien élaboré garantira une reprise rapide et efficace des activités en cas d'urgence, minimisant ainsi l'impact sur les utilisateurs et l'entreprise dans son ensemble.
+  \item \textbf{Amélioration de la documentation}:
+    \ En fournissant une documentation détaillée et des ressources de support, la prise en main de Qibates par les utilisateurs seras facilitée.
+\end{enumerate}
 
 \subsection{Les apports professionnels et personnels}
+Ce projet réalisé au sein de Quartz-Insight lors de mon alternance a été une expérience professionnelle et personnelle enrichissante.
+Sur le plan professionnel, j'ai pu mettre en pratique mes compétences techniques en développement de microservices, en utilisant des technologies telles que PostgreSQL, Spring Boot et Angular.
+J'ai renforcé ma compréhension des processus de développement logiciel et des bonnes pratiques. 
+Travailler en équipe m'a permis d'améliorer ma communication et ma collaboration.
+Sur le plan personnel, j'ai gagné en confiance en moi grâce aux succès obtenus et j'ai développé mon autonomie en prenant des initiatives et en résolvant des problèmes de manière indépendante.
+En résumé, ce projet m'a apporté des compétences techniques solides, renforcé ma confiance en moi, développé mon autonomie et élargi mon réseau professionnel, ce qui constituera des atouts précieux pour ma future carrière en tant qu'ingénieur logiciel.
+
+\subsection{Avenir professionnel}
+Pour mon avenir professionnel, je suis passionné par l'optimisation des performances en tant qu'ingénieur en logiciel. Je suis attiré par le développ\-ement frontend avec Svelte et TypeScript, ainsi que le développement backend avec Rust. Mon objectif est de créer des applications web rapides et performantes en réduisant les temps de réponse et en optimisant les requêtes.
+J'explore également l'utilisation de Rust compilé en WebAssembly pour exécuter du code hautement performant dans les navigateurs web. Cela me permet de développer des applications web puissantes et réactives, offrant une expérience utilisateur améliorée.
+En résumé, mon ambition est de contribuer à des projets stimulants axés sur l'amélioration des performances. Je souhaite devenir un ingénieur en logiciel polyvalent, capable de créer des solutions performantes en utilisant Svelte, TypeScript, Rust et WebAssembly, afin de garantir des expériences utilisateur exceptionnelles et d'optimiser l'efficacité des systèmes.
 
 \end{document}

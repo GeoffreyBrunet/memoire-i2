@@ -69,7 +69,7 @@ Pour finir, je tiens à présenter ma gratitude et mon respect à toutes les per
 
 \chapter{Introduction}
 
-Quartz-Insight est une société créée en 2015 par monsieur Christian Montillaud suite à une volonté de fonder une entreprise basée sur l’expertise,  la performance et le management des processus d’$EPM^{10}$ et de $BI^{11}$ des entreprises.
+Quartz-Insight est une société créée en 2015 par monsieur Christian Montillaud suite à une volonté de fonder une entreprise basée sur l’expertise,  la performance et le management des processus d’EPM et de BI des entreprises.
 L’origine du nom de l’entreprise proviens de la passion de monsieur  Montillaud pour les minéraux, et le Quartz étant choisis car étant un minéral transparent, valeur qu’il souhaite apporter à son entreprise.
 Le terme «Insight » quand à lui reprend la volonté d’avoir une expertise profonde, une véritable introspection sur les domaines de compétences de l’entreprise.
 \newline
@@ -77,10 +77,10 @@ Le terme «Insight » quand à lui reprend la volonté d’avoir une expertise p
 Les trois valeurs de l’entreprise sont l’accompagnement (de l’écoute à la proposition d’une solution adaptée), l’esprit d’équipe (allant de paire avec la solidarité) et l’honnêteté (avec nos différents clients et parternaires).
 \newline
 \newline
-Ses activités sont principalement basé sur les solutions logicielles $EPM^{10}$  de chez Oracle, allant d’outils comme Essbase, une base de données multidimensionnelle à Planning, ne solution de planification et de budgétisation.
+Ses activités sont principalement basé sur les solutions logicielles EPM  de chez Oracle, allant d’outils comme Essbase, une base de données multidimensionnelle à Planning, ne solution de planification et de budgétisation.
 Quart-Insight a deux pôles d’activités différents.
-Le premier est un pôle « consulting », les collaborateurs membres apportant leurs expertises aux clients pour la gestion et l’amélioration de leurs différents services $EPM^{10}$ .
-Le deuxième pôle est un pôle Recherche et Développement, avec une équipe d’ingénerie travaillant sur une solution logicielle sous forme d’Add-In pour la manipulation de logiciels de $BI^{11}$ dans des tableurs ou logiciels de présentation comme Microsoft Excel, Google Sheets et Google Slides.    
+Le premier est un pôle « consulting », les collaborateurs membres apportant leurs expertises aux clients pour la gestion et l’amélioration de leurs différents services EPM.
+Le deuxième pôle est un pôle Recherche et Développement, avec une équipe d’ingénerie travaillant sur une solution logicielle sous forme d’Add-In pour la manipulation de logiciels de BI dans des tableurs ou logiciels de présentation comme Microsoft Excel, Google Sheets et Google Slides.    
 \clearpage
 
 \chapter{Environnement professionnel}
@@ -93,11 +93,11 @@ Le deuxième pôle est un pôle Recherche et Développement, avec une équipe d�
 La société est gérée par monsieur Christian Montilaud.
 Monsieur Gaël Roustan, est directeur technique et supervise le pôle Recherche et Développe\-ment.
 Madame Cécilia Bourvieux gère un projet de test de charge pour les solutions de BI, du développement logiciel à la mise en place et l’exécution chez les clients.
-Les membres du pôle R\&D ont en charge le développement des Add-Ins pour les logiciels de chez Microsoft et Google, ainsi que la création, la mise en production et la gestion des $microservices^{12}$ sous-jacents, avec l’aide de notre CTO.
+Les membres du pôle R\&D ont en charge le développement des Add-Ins pour les logiciels de chez Microsoft et Google, ainsi que la création, la mise en production et la gestion des microservices sous-jacents, avec l’aide de notre CTO.
 Le reste des collaborateurs sont des consultants apportant leurs expertises dans leurs domaines respectifs chez nos différents clients.
 \newline
 \newline
-Je suis donc actuellement développeur au sein du pôle R\&D, et travaille sur différents projets et $microservices^{12}$, dans le but d’améliorer ceux existants, résoudre des bugs et en créer de nouveaux lorsque cela est nécessaire.
+Je suis donc actuellement développeur au sein du pôle R\&D, et travaille sur différents projets et microservices, dans le but d’améliorer ceux existants, résoudre des bugs et en créer de nouveaux lorsque cela est nécessaire.
 
 \begin{figure}
   \section{Présentation de l'étudiant}
@@ -140,14 +140,136 @@ Il en vas de même pour les bases de données, que nous utilisons en version man
 \chapter{Valorisation des compétences}
 
 \section{Présentation globale du projet}
-
+En tant qu'alternant, le projet qui m'a été confié consistait à effectuer une transformation majeure d'un service existant, passant d'une architecture monolithique à une architecture de microservices.
+Le service initial comprenait une web UI, une API REST et une base de données destinées à stocker les informations des utilisateurs, telles que leurs noms, domaines d'entreprise et types de profil.
+L'architecture monolithique, qui reposait sur ASP.NET avec SQL Server comme SGBD, présentait des limitations en termes de flexibilité et d'évolutivité.
+L'objectif principal était donc de repenser cette infrastructure afin de permettre une évolutivité améliorée et des performances optimisées.
+Pour atteindre cet objectif, nous avons adopté une approche basée sur les microservices.
+Cela impliquait de diviser le service en plusieurs composants indépendants, chacun étant responsable d'une fonction spécifique.
+Ainsi, nous avons pu obtenir une architecture plus flexible, où chaque microservice peut être géré et déployé de manière autonome.
+Dans le cadre de cette transformation, nous avons choisi d'utiliser Angular pour la web UI, offrant ainsi une expérience utilisateur réactive et enrichissante.
+Pour l'API REST, nous avons opté pour Spring Boot, un framework Java réputé pour sa simplicité et sa robustesse.
+De plus, nous avons migré la base de données vers PostgreSQL, un système de gestion de base de données open source réputé pour ses performances et sa fiabilité.
+Toutes ces technologies sont identiques pour le reste de nos microservices, nous permettant d’avoir une architecture uniformisée.
 
 \section{Activité 1 - cartographie complète du système d'information existant}
 \subsection{Compétence et son fondement}
 \textbf{Bloc de compétences}: A1 – Analyse et définition de la stratégie des systèmes d’information
 \newline
 \textbf{Compétence choisie}: A1C4 – Cartographier un système d’information existant selon les 4 niveaux (métier, fonctionnel, applicatif et infrastructure) afin d’avoir une bonne connaissance de l’ensemble de ses composants
+\newline
+\textbf{Détails}: Cette compétence consiste à valider mon aptitude à réaliser une cartographie du S.I. précisant pour chaque couche les éléments suivants:
+\begin{itemize}
+  \item préciser dans le schéma les entités et les systèmes (en lien avec les Process Métier)
+  \item préciser l’architecture applicative globale (les logiciels, les services et l’analyse des flux de données)
+  \item présenter dans son schéma l’Infrastructure logique (VLAN, adresse.IP, filtrage et routage) infrastructure physique (équipements).
+\end{itemize}
+Elle consiste aussi à démontrer une utilisation appropriée d’un logiciel de cartographie:
+\begin{itemize}
+  \item démarrage du logiciel adéquat
+  \item temps d’utilisation approprié (min 10 minutes)
+  \item le résultat de la cartographie informatique correspond aux attendus d’une cartographie d’un SI demandé par un comité de direction
+\end{itemize}
 \subsection{Présentation et réalisation de l'activité}
+Une étape pour cartographier le système d'information existant selon les 4 niveaux (métier, fonctionnel, applicatif et infrastructure) serait la réalisation d'une analyse approfondie de l'environnement existant. Voici la suite d’étapes réalisées pour atteindre cet objectif:
+\subsubsection{Collecte des informations}
+Ce monolithe n’a pas de documentation proprement associée, la principale source de connaissance est son code source, présent dans son repository sur Gitlab.
+Pour analyser le service monolithique et étant programmé en .net, j’ai utilisé l’IDE fournis par Microsoft, Visual Studio.
+Les informations importantes à regarder pendant l’analyse du code sont:
+\begin{enumerate}
+  \item Les endpoints de l’API REST
+  \item Les classes qui servent de modèles
+  \item Les requêtes effectuées par l’ORM vers le SGBD
+  \item Les autres microservices qui communiquent avec le monolithe.
+\end{enumerate}
+La base de donnée utilisée par le monolithe a été utile pour observer les données sauvegardées dans les tables, et les jointures entre elles.
+Étant donné qu’il s’agit de Microsoft SQL Server comme service de gestion de base de données, j’ai utilisé SSMS (SQL Server Management Studio) pour effectuer mes recherches.
+Pour ce qui est des diagrammes et schémas, je les ai réalisé après analyse et sont présent dans ce dossier dans la sous-section « Analyse applicative ».
+\subsubsection{Identification des composants métier}
+Après consultation de l’équipe de développement, ce service monolithique n’est utilisé que par les dit-membres de cette équipe. La console n’est accéssible et utilisée que par eux.
+L’objectif de ce service est de sauvegarder l’état des comptes et domaines clients qui utilisent la solution QiBates, ainsi que le type de profil pour les comptes (qui défini quelles options sont accessibles ou non).
+Côté client, si il n’a jamais souscrit à une ou plusieurs licences QiBates, un domaine avec le nom de l’entreprise est créé. Le client envoie une liste des utilisateurs, avec entre autre leurs adresses mails professionnelles, et le type de profile demandé pour chaque compte.
+Toutes ces informations sont enregistrées dans un fichier CSV qui est envoyé au monolithe, que celui-ci utiliseras pour créer et écrire les comptes avec les bonnes informations dans la base de données.
+\subsubsection{Analyse fonctionnelle}
+Pour l'analyse fonctionnelle, j'ai divisé celle-ci en 6 sous-analyses distinctes:
+\begin{enumerate}
+  \item \textbf{Identification des fonctionnalités, qui sont}:
+    \begin{itemize}
+      \item Création de profils utilisateur avec des informations telles que leur nom, domaine d'entreprise et type de profil, ainsi que sa durée de validité.
+      \item Recherche d'utilisateurs par domaine d'entreprise.
+      \item Mise à jour des informations du profil utilisateur.
+      \item Gestion de la durée de vie des profils avec possibilité de renouvellement ultérieur.
+      \item Suppresion d'un utilisateur, voir d'un domaine.
+    \end{itemize}
+  \item \textbf{Définition des cas d'utilisation}:
+    \begin{itemize}
+      \item Demande de création d'un nouvel utilisateur ou de plusieurs utilisateurs par un membre du pôle R&D, avec validation du directeur technique ou du CEO, demande effecutée par un directeur technique ou un contrôleur de gestion, en fonction de nos clients.
+      \item Modification d'un profil utilisateur par un membre du pôle R&D, avec validation du directeur technique ou du CEO.
+      \item Suppression d'un profil utilisateur par un membre du pôle R&D, avec validation du directeur technique ou du CEO.
+      \item Renouvellement de la durée de vie d'un profil utilisateur.
+      \end{itemize}
+    \item \textbf{Modélisation des flux de travail}:
+    Imaginons un premier cas d'utilisation qui serait "Demande de création, modification ou suppression d'un profil utilisateur":
+    \begin{itemize}
+      \item Un de nos client nous envoie une demande de création, modification ou suppression d'un profil utilisateur avec les informations nécessaires.
+      \item Le CEO ou le CTO valide la dite demande.
+      \item Les modifications sont transmises au pôle R&D, et un membre de celui-ci apporte les modifications sur l'interface web de l'application.
+    \end{itemize}
+    Dans le cadre d'un renouvellement de la durée de vie d'un profil utilisateur qui serviras en second cas d'utilisation:
+    \begin{itemize}
+      \item Un de nos client nous envoie une demande de création, modification ou suppression d'un profil utilisateur avec les informations nécessaires.
+      \item Le CEO ou le CTO valide la dite demande.
+      \item Les modifications sont transmises au pôle R&D, et un membre de celui-ci apporte les modifications sur l'interface web de l'application.
+    \end{itemize}
+  \item \textbf{Définition des entrées et sorties}:
+    \begin{itemize}
+      \item Pour les demandes de création, modification ou suppression d'un profil utilisateur, les entrées comprennent les informations nécessaires pour le profil utilisateur concerné.
+      \item Pour la demande de renouvellement de la durée de vie d'un profil utilisateur, l'entrée est l'identification du profil utilisateur concerné.
+      \item La sortie attendue est la validation ou le refus de la demande par le directeur technique ou le CEO. Si la demande est validée, la sortie finale est la création, modification ou suppresion d'un ou plusieurs comptes.
+    \end{itemize}
+\end{enumerate}
+\subsubsection{Analyse applicative}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.40,center]{schemas/schema-qibates-original.png}
+    \caption{Schéma de l'infrastructure actuelle}
+  \end{figure}
+  Pour plus de clareté et de compréhension des rôles du service monolithique dans le schéma, celui-ci a été fragmenté, mais le monolithe contient tous les services du schéma suivants:
+  \begin{itemize}
+    \item \textbf{Licence service}: service qui permet de connaître l'existence d'un compte, son état et son profile.
+    \item \textbf{Licence service Admin}: Partie backend permettant la création, modification et suppression des comptes, mais uniquement utilisable par un administrateur depuis l'interface web.
+    \item \textbf{service Admin UI}: Interface web permettant la création, modification et suppression des comptes.
+  \end{itemize}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.40,center]{schemas/ralph-diagram.png}
+    \caption{Modèle de conception de données de la base de donnée du monolithe}
+  \end{figure}
+  Voici le MCD réalisé à partir des informations obtenues depuis le SGBD, et avec l'aide d'un collaborateur qui avais œuvré à son intégration.
+  Une description de l'utilité de chaque table présente dans le schéma est effectuée ici:
+  \begin{itemize}
+    \item \textbf{Domain}: contient le domaine du client, ainsi que la durée de validité de ses comptes sous-jacents.
+    \item \textbf{RoleUser}: utilisateur avec un rôle particulier pour l'administration de l'application.
+    \item \textbf{Role}: role d'un utilisateur pour accéder et utiliser la console (droits de lecture ou rôle d'administrateur).
+    \item \textbf{Client}: identifiant client, car un client peut avoir plusieurs domaines.
+    \item \textbf{Pack}: permet de lier une liste prédéfinie de paramètres à un domaine (pour pouvoir les appliquer à tous les utilisateurs du domaine).
+    \item \textbf{SettingPack}: liste prédéfinie de paramètres pour un utilisateur.
+    \item \textbf{User}: utilisateur pour utiliser QiBates.
+    \item \textbf{PackProfile}: permet de lier un domaine à un utilisateur.
+    \item \textbf{UserProfile}: profile utilisateur permettant à un utilisateur d'avoir une liste de paramètres.
+    \item \textbf{SettingProfile}: liste de paramètres de fonctionnalitées pour un utilisateurs.
+    \item \textbf{FeatureSettingProfile}: permet de changer les paramètres des fonctionnalitées.
+    \item \textbf{AvaibleFeature}: fonctionnalités spécifiques à QiBates (comme la coloration des cellules, le fait de se connecter à certains cubes, etc.).
+  \end{itemize}
+
+\subsubsection{Analyse de l'infrastructure}
+Les exigences de l'infrascture sont définis sur 3 paramètres:
+\begin{itemize}
+  \item Performance: Le système doit être capable de traiter rapidement les demandes de création, modification ou suppression de profils, ainsi que les demandes de renouvellement.
+  \item Sécurité: Les accès et les modifications aux profils utilisateurs doivent être contrôlés et sécurisés.
+  \item Scalabilité: Le système doit être évolutif pour gérer une augmentation du nombre de demandes de gestion de profils sans compromettre les performances.
+\end{itemize}
+\subsubsection{Documentation}
 \subsection{Contexte de réalisation}
 \subsection{Conclusion sur l'activité}
 
@@ -167,6 +289,26 @@ Il en vas de même pour les bases de données, que nous utilisons en version man
 \textbf{Compétence choisie}: A4C6 – Définir les données de référence de l’entreprise à partir des données utilisées pour créer un référentiel de données afin d’assurer la mise à disposition de données cohérentes aux directions métiers
 \subsection{Présentation et réalisation de l'activité}
 \subsection{Contexte de réalisation}
+  \begin{figure}[h]
+      \centering
+      \includegraphics[scale=0.40,center]{schemas/features-mcd-ralph2.png}
+      \caption{Modèle de conception de données des domaines clients}
+  \end{figure}
+  \begin{figure}[h]
+      \centering
+      \includegraphics[scale=0.40,center]{schemas/settings-mcd-kingcandy.png}
+      \caption{Modèle de conception de données pour la sauvegarde des paramètres clients}
+  \end{figure}
+  \begin{figure}[h]
+      \centering
+      \includegraphics[scale=0.40,center]{schemas/notifications-mcd-calhoun.png}
+      \caption{Modèle de conception de données de sauvegarde des paramètres de notifications}
+  \end{figure}
+  \begin{figure}[h]
+      \centering
+      \includegraphics[scale=0.25,center]{schemas/cap-theoreme.png}
+      \caption{Théorème CAP}
+  \end{figure}
 \subsection{Conclusion sur l'activité}
 
 \section{Activité 4 - analyse des besoins métiers pour une solution applicative sur mesure}
@@ -185,6 +327,11 @@ Il en vas de même pour les bases de données, que nous utilisons en version man
 \textbf{Compétence choisie}: A5C2 – Concevoir une architecture applicative selon la complexité du système d’information existant de type architecture distribuée, ou micro service évolutive et tolérante aux pannes
 \subsection{Présentation et réalisation de l'activité}
 \subsection{Contexte de réalisation}
+  \begin{figure}[h]
+      \centering
+      \includegraphics[scale=0.40,center]{schemas/schema-qibates-v2.png}
+      \caption{Schéma de la refonte en microservices}
+  \end{figure}
 \subsection{Conclusion sur l'activité}
 
 \section{Activité 6 - développement d'une application pour répondre aux besoins utilisateurs/directions métiers}
@@ -281,8 +428,8 @@ Sur le plan personnel, j'ai gagné en confiance en moi grâce aux succès obtenu
 En résumé, ce projet m'a apporté des compétences techniques solides, renforcé ma confiance en moi, développé mon autonomie et élargi mon réseau professionnel, ce qui constituera des atouts précieux pour ma future carrière en tant qu'ingénieur logiciel.
 
 \subsection{Avenir professionnel}
-Pour mon avenir professionnel, je suis passionné par l'optimisation des performances en tant qu'ingénieur en logiciel. Je suis attiré par le développ\-ement frontend avec Svelte et TypeScript, ainsi que le développement backend avec Rust. Mon objectif est de créer des applications web rapides et performantes en réduisant les temps de réponse et en optimisant les requêtes.
+Pour mon avenir professionnel, je suis passionné par l'optimisation des performances en tant qu'ingénieur en logiciel. Je suis attiré par le développ\-ement frontend avec des langages et libraries tels que TypeScript, React ou Svelte, ainsi que le développement backend avec Rust. Mon objectif est de créer des applications web rapides et performantes en réduisant les temps de réponse et en optimisant les requêtes.
 J'explore également l'utilisation de Rust compilé en WebAssembly pour exécuter du code hautement performant dans les navigateurs web. Cela me permet de développer des applications web puissantes et réactives, offrant une expérience utilisateur améliorée.
-En résumé, mon ambition est de contribuer à des projets stimulants axés sur l'amélioration des performances. Je souhaite devenir un ingénieur en logiciel polyvalent, capable de créer des solutions performantes en utilisant Svelte, TypeScript, Rust et WebAssembly, afin de garantir des expériences utilisateur exceptionnelles et d'optimiser l'efficacité des systèmes.
+En résumé, mon ambition est de contribuer à des projets stimulants axés sur l'amélioration des performances. Je souhaite devenir un ingénieur en logiciel polyvalent, capable de créer des solutions performantes en utilisant React ou Svelte, TypeScript, Rust et WebAssembly, afin de garantir des expériences utilisateur exceptionnelles et d'optimiser l'efficacité des systèmes.
 
 \end{document}

@@ -279,6 +279,114 @@ Les exigences de l'infrascture sont définis sur 3 paramètres:
 \newline
 \textbf{Compétence choisie}: A1C5 – Identifier les informations sensibles, les risques, les zones critiques et les chemins d’attaque possibles d’un système d’information existant à l’aide de la cartographie afin d’aider le/la RSSI à définir une politique de sécurité
 \subsection{Présentation et réalisation de l'activité}
+  Pour faciliter l'identification des informations sensibles, les risques, les zones critiques et les chemins d’attaque possibles, j'ai réalisé une première mouture d'un Plan de Sécurité des Systèmes d'Information (PSSI).
+  Celui ci ce base sur 3 principaux axes, les principes organisationnels, les principes de mise en œuvre et les principes techniques.
+  \subsubsection{}
+  Voici les \textbf{principes organisationnels en œuvre} du projet de refonte du service:
+  \begin{enumerate}
+    \item \textbf{Politique de sécurité}:
+      \begin{itemize}
+        \item Élaboration d'une politique de sécurité qui définit les objectifs, les responsabilités et les exigences pour la sécurité de l'ensemble de l'organisation.
+      \end{itemize}
+    \item \textbf{Organisation de la sécurité}:
+      \begin{itemize}
+        \item Établissement d'une structure des organisations claire pour la gestion de la sécurité, avec une identification des responsabilités et des rôles spécifiques liés à la sécurité de l'information.
+        \item Désignation d'un RSSI (Responsable de la sécurité des systèmes d'information) chargé de coordonner les activités de sécurité et de veiller à leur mise en œuvre.
+      \end{itemize}
+    \item \textbf{Gestion des risques SSI}:
+      \begin{itemize}
+        \item Mise en place un processus de gestion des risques pour identifier, évaluer et traiter les risques liés à la sécurité de l'information.
+        \item Développement des plans d'action pour atténuer les risques identifiés.
+      \end{itemize}
+    \item \textbf{Sécurité et cycle de vie}:
+      \begin{itemize}
+        \item Intégration des principes de sécurité dès les phases de conception, de développement, de déploiement et de maintenance du système.
+        \item Mise en place d'évaluations régulières de sécurité tout au long du cycle de vie du projet pour identifier les vulnérabilités et prendre les mesures correctives nécessaires.
+      \end{itemize}
+    \item \textbf{Assurance et certification}:
+      \begin{itemize}
+        \item Établissement des mécanismes d'assurance et de certification pour valider la conformité de votre système à des  normes et réglementations en matière de sécurité.
+        \item Recherche des certifications appropriées, telles que ISO 27001 (norme relative à la sécurité), pour attester de la maturité et de la conformité de votre système en matière de sécurité.
+      \end{itemize}
+  \end{enumerate}
+  \subsubsection{}
+  Voici les \textbf{principes de mise en œuvre} du projet de refonte du service:
+  \begin{enumerate}
+    \item \textbf{Aspects humains}:
+      \begin{itemize}
+        \item Implication les parties prenantes clés, telles que le directeur technique, le CEO, les membres du pôle R&D, et assurez-vous de leur engagement envers les objectifs de sécurité du projet, au travers de réunions.
+        \item Établissement clair des rôles et des responsabilités en matière de sécurité, en définissant les tâches et les autorisations appropriées pour chaque acteur du projet (en corrélation avec les différents droits d'administration du service gestionnaire de licences).
+      \end{itemize}
+    \item \textbf{Planification de la continuité des activités}:
+      \begin{itemize}
+        \item Identification des activités critiques du système et élaboration de plans de continuité des activités pour assurer leur disponibilité en cas d'incident ou de sinistre.
+        \item Mise en place de mécanismes de sauvegarde réguliers et des procédures de récupération des données pour minimiser les temps d'arrêt et préserver l'intégrité des informations.
+      \end{itemize}
+    \item \textbf{Gestion des incidents}:
+      \begin{itemize}
+        \item Création et écriture de procédures claires pour la gestion des incidents de sécurité, y compris la notification, l'investigation, la résolution et le suivi.
+        \item Mise en place d'une ou plusieurs personnes pour répondre rapidement aux incidents et atténuer les impacts.
+      \end{itemize}
+    \item \textbf{Sensibilisation et formation}:
+      \begin{itemize}
+        \item Mise en place de sessions de sensibilisation à la sécurité pour les employés (clients comme internes à Quartz Insight), afin de les informer des meilleures pratiques, des politiques et des procédures de sécurité. \
+          Cela peux faire référence à des points comme le SSO, la double authentification, la gestion des mots de passe le fait de vérouiller son poste lorsqu'un utilisateur utilise QiBates et s'absente de son poste).
+      \end{itemize}
+    \item \textbf{Exploitation}:
+      \begin{itemize}
+        \item Mise en place d'une solution de supervision en temps réel, avec une définition des métriques et journaux d’évènements, au préalable.
+        \item Formation des membres du pôle R&D à la lecture et l'analyse des dites métriques et des dits journaux d’évènements.
+        \item Écriture d'une politique de mise à jour des micro-services pour réduire le temps d'arrêt à un strict minimum.
+      \end{itemize}
+    \item \textbf{Aspects physiques et environnementaux}:
+      \begin{itemize}
+        \item Mise à part les ordinateurs portables, Quartz-Insight ne possède aucune machine physique.
+        \item Nos machines virtuelles sont toutes hébergées chez Orange Business Service (OBS), dans des régions.
+        \item Un accès VPN est requis pour accéder aux serveurs et applications en cours de dévellopement, en plus d'un couple identifiant et mot de passe propre à chacun.
+      \end{itemize}
+  \end{enumerate}
+  \subsubsection{}
+  Voici une analyse des \textbf{principes techniques} de la PSSI:
+  \begin{enumerate}
+    \item \textbf{Identification des composants métier}:
+      \begin{itemize}
+        \item Le système comprendra les composants métier suivants : interface web, API REST et base de données.
+        \item L'interface web sera développée en utilisant Angular.
+        \item L'API REST sera développée avec Spring Boot.
+        \item La base de données sera migrée vers PostgreSQL, un système de gestion de base de données open source réputé pour ses performances et sa fiabilité.
+        \item Les autres microservices du projet utiliseront également ces technologies pour uniformiser l'architecture.
+      \end{itemize}
+    \item \textbf{Gestion des accès et des privilèges}:
+      \begin{itemize}
+        \item Les utilisateurs doivent s'authentifier avant d'accéder au système, en utilisant des identifiants et des mots de passe, ainsi qu'un compte Google ou Microsoft pour le SSO.
+        \item Des politiques de contrôle des privilèges sont mises en place pour limiter l'accès aux fonctionnalités et aux données sensibles.
+        \item Les membres du pôle R&D auront des privilèges spécifiques pour créer, modifier et supprimer des profils utilisateurs, sous réserve de validation par le directeur technique ou le CEO.
+      \end{itemize}
+    \item \textbf{Protection des données}:
+      \begin{itemize}
+        \item Les données des utilisateurs, telles que leurs noms, domaines d'entreprise et types de profil, seront stockées dans la base de données PostgreSQL.
+        \item Des mesures de sécurité, telles que le chiffrement des données sensibles et la sauvegarde régulière des données, seront mises en place pour assurer la confidentialité et la disponibilité des données.
+        \item Un cluster de SGBD peut être mis en place, avec un outil logiciel comme PG-Pool II.
+      \end{itemize}
+    \item \textbf{Surveillance et détection des incidents}:
+      \begin{itemize}
+        \item Un système de surveillance des activités anormales et des incidents de sécurité est mis en place pour détecter les éventuelles violations de sécurité ou les comportements suspects. \
+          Il utilise notre système de supervision et de gesiton de journaux d'évènements.
+        \item Des procédures de gestion des incidents seront définies, notamment pour la notification, l'investigation, la résolution et le suivi des incidents de sécurité.
+      \end{itemize}
+    \item \textbf{Conformité et réglementations}:
+      \begin{itemize}
+        \item Le projet doit se conformer aux réglementations applicables en matière de protection des données et de confidentialité, telles que le RGPD (Règlement général sur la protection des données).
+        \item Des audits réguliers seront effectués pour évaluer la conformité et l'efficacité des mesures de sécurité mises en place.
+      \end{itemize}
+  \end{enumerate}
+  Les 4 critères de sécurité pour le service d'information (SI) dans un PSSI sont:
+  \begin{enumerate}
+    \item \textbf{Confidentialité}: le SI de mettre en place une politique de gestion des droits pour avoir la fiabilité que seules les personnes autorisées ont accès aux données.
+    \item \textbf{Disponibilité}: le SI doit rendre accessible les données, rapidement et avec une constance dans le temps.
+    \item \textbf{Intégrité}: le SI doit être en mesure de vérifier et prouver qu'aucune modification n'a été apportée aux données.
+    \item \textbf{Tracabilité}: le SI doit mettre en place un historique des accès aux données, historique qui se doit d'être lisible et vérifiable.
+  \end{enumerate}
 \subsection{Contexte de réalisation}
 \subsection{Conclusion sur l'activité}
 

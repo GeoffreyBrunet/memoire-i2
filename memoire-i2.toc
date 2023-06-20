@@ -12,66 +12,67 @@
 \contentsline {section}{\numberline {4.2}Activité 1 - cartographie complète du système d'information existant}{10}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Compétence et son fondement}{10}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Présentation et réalisation de l'activité}{11}{subsection.4.2.2}%
-\contentsline {subsubsection}{Collecte des informations}{11}{section*.2}%
-\contentsline {subsubsection}{Identification des composants métier}{11}{section*.3}%
-\contentsline {subsubsection}{Analyse fonctionnelle}{12}{section*.4}%
-\contentsline {subsubsection}{Analyse applicative}{13}{section*.5}%
-\contentsline {subsubsection}{Analyse de l'infrastructure}{15}{section*.6}%
-\contentsline {subsubsection}{Documentation}{15}{section*.7}%
+\contentsline {subsubsection}{Collecte des informations}{11}{subsection.4.2.2}%
+\contentsline {subsubsection}{Identification des composants métier}{11}{Item.8}%
+\contentsline {subsubsection}{Analyse fonctionnelle}{12}{Item.8}%
+\contentsline {subsubsection}{Analyse applicative}{13}{Item.12}%
+\contentsline {subsubsection}{Analyse de l'infrastructure}{15}{figure.4.2}%
+\contentsline {subsubsection}{Documentation}{15}{figure.4.2}%
 \contentsline {subsection}{\numberline {4.2.3}Contexte de réalisation}{15}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Conclusion sur l'activité}{15}{subsection.4.2.4}%
 \contentsline {section}{\numberline {4.3}Activité 2 - cartographie des informations sensibles, évaluation des risques et définition d'une politique de sécurité}{15}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Compétence et son fondement}{15}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Présentation et réalisation de l'activité}{16}{subsection.4.3.2}%
-\contentsline {subsubsection}{}{16}{section*.8}%
-\contentsline {subsubsection}{}{16}{section*.9}%
-\contentsline {subsubsection}{}{18}{section*.10}%
-\contentsline {subsection}{\numberline {4.3.3}Contexte de réalisation}{19}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Conclusion sur l'activité}{19}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Activité 3 - analyse des données de références pour la création d'un référentiel de données}{19}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Compétence et son fondement}{19}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Présentation et réalisation de l'activité}{19}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Contexte de réalisation}{19}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Conclusion sur l'activité}{19}{subsection.4.4.4}%
-\contentsline {section}{\numberline {4.5}Activité 4 - analyse des besoins métiers pour une solution applicative sur mesure}{22}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Compétence et son fondement}{22}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Présentation et réalisation de l'activité}{22}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Contexte de réalisation}{22}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Conclusion sur l'activité}{22}{subsection.4.5.4}%
-\contentsline {section}{\numberline {4.6}Activité 5 - conception d'une architecture applicative évolutive et tolérante aux pannes}{22}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Compétence et son fondement}{22}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Présentation et réalisation de l'activité}{22}{subsection.4.6.2}%
-\contentsline {subsection}{\numberline {4.6.3}Contexte de réalisation}{22}{subsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.6.4}Conclusion sur l'activité}{22}{subsection.4.6.4}%
-\contentsline {section}{\numberline {4.7}Activité 6 - développement d'une application pour répondre aux besoins utilisateurs/directions métiers}{23}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Compétence et réalisation et son fondement}{23}{subsection.4.7.1}%
+\contentsline {subsubsection}{}{16}{subsection.4.3.2}%
+\contentsline {subsubsection}{}{16}{Item.17}%
+\contentsline {subsubsection}{}{18}{Item.23}%
+\contentsline {subsubsection}{Norme ISO 27000}{19}{Item.32}%
+\contentsline {subsection}{\numberline {4.3.3}Contexte de réalisation}{20}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Conclusion sur l'activité}{20}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Activité 3 - analyse des données de références pour la création d'un référentiel de données}{20}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Compétence et son fondement}{20}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Présentation et réalisation de l'activité}{20}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Contexte de réalisation}{20}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Conclusion sur l'activité}{20}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}Activité 4 - analyse des besoins métiers pour une solution applicative sur mesure}{23}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Compétence et son fondement}{23}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Présentation et réalisation de l'activité}{23}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Contexte de réalisation}{23}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Conclusion sur l'activité}{23}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}Activité 5 - conception d'une architecture applicative évolutive et tolérante aux pannes}{23}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Compétence et son fondement}{23}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Présentation et réalisation de l'activité}{23}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Contexte de réalisation}{23}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}Conclusion sur l'activité}{23}{subsection.4.6.4}%
+\contentsline {section}{\numberline {4.7}Activité 6 - développement d'une application pour répondre aux besoins utilisateurs/directions métiers}{24}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Compétence et réalisation et son fondement}{24}{subsection.4.7.1}%
 \contentsline {subsection}{\numberline {4.7.2}Présentation et réalisation de l'activité}{24}{subsection.4.7.2}%
 \contentsline {subsection}{\numberline {4.7.3}Contexte de réalisation}{24}{subsection.4.7.3}%
 \contentsline {subsection}{\numberline {4.7.4}Conclusion sur l'activité}{24}{subsection.4.7.4}%
-\contentsline {section}{\numberline {4.8}Activité 7 - analyse de la qualité de la solution applicative et mise en place d’un plan de correction / d’amélioration}{24}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Compétence et son fondement}{24}{subsection.4.8.1}%
-\contentsline {subsection}{\numberline {4.8.2}Présentation et réalisation de l'activité}{24}{subsection.4.8.2}%
-\contentsline {subsection}{\numberline {4.8.3}Contexte de réalisation}{24}{subsection.4.8.3}%
-\contentsline {subsection}{\numberline {4.8.4}Conclusion sur l'activité}{24}{subsection.4.8.4}%
-\contentsline {section}{\numberline {4.9}Activité 8 - mise en place d’une solution d’intégration continue}{24}{section.4.9}%
-\contentsline {subsection}{\numberline {4.9.1}Compétence et son fondement}{24}{subsection.4.9.1}%
-\contentsline {subsection}{\numberline {4.9.2}Présentation et réalisation de l'activité}{24}{subsection.4.9.2}%
-\contentsline {subsection}{\numberline {4.9.3}Contexte de réalisation}{24}{subsection.4.9.3}%
-\contentsline {subsection}{\numberline {4.9.4}Conclusion sur l'activité}{24}{subsection.4.9.4}%
-\contentsline {section}{\numberline {4.10}Activité 9 - validation fonctionnelle et rédaction de la documentation pour les utilisateurs}{24}{section.4.10}%
-\contentsline {subsection}{\numberline {4.10.1}Compétence et son fondement}{24}{subsection.4.10.1}%
-\contentsline {subsection}{\numberline {4.10.2}Présentation et réalisation de l'activité}{25}{subsection.4.10.2}%
-\contentsline {subsection}{\numberline {4.10.3}Contexte de réalisation}{25}{subsection.4.10.3}%
-\contentsline {subsection}{\numberline {4.10.4}Conclusion sur l'activité}{25}{subsection.4.10.4}%
-\contentsline {section}{\numberline {4.11}Activité 10 - formation des utilisateurs, mise en place d’une enquête de satisfaction ultérieure}{25}{section.4.11}%
-\contentsline {subsection}{\numberline {4.11.1}Compétence et son fondement}{25}{subsection.4.11.1}%
-\contentsline {subsection}{\numberline {4.11.2}Présentation et réalisation de l'activité}{25}{subsection.4.11.2}%
-\contentsline {subsection}{\numberline {4.11.3}Contexte de réalisation}{25}{subsection.4.11.3}%
-\contentsline {subsection}{\numberline {4.11.4}Conclusion sur l'activité}{25}{subsection.4.11.4}%
-\contentsline {chapter}{\numberline {5}Conclusion}{26}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Résumé}{26}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Ouverture sur l'avenir}{26}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}L'entreprise et ses perspectives}{26}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Le service et ses évolutions}{27}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Les apports professionnels et personnels}{27}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Avenir professionnel}{28}{subsection.5.2.4}%
+\contentsline {section}{\numberline {4.8}Activité 7 - analyse de la qualité de la solution applicative et mise en place d’un plan de correction / d’amélioration}{25}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Compétence et son fondement}{25}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Présentation et réalisation de l'activité}{25}{subsection.4.8.2}%
+\contentsline {subsection}{\numberline {4.8.3}Contexte de réalisation}{25}{subsection.4.8.3}%
+\contentsline {subsection}{\numberline {4.8.4}Conclusion sur l'activité}{25}{subsection.4.8.4}%
+\contentsline {section}{\numberline {4.9}Activité 8 - mise en place d’une solution d’intégration continue}{25}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Compétence et son fondement}{25}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Présentation et réalisation de l'activité}{25}{subsection.4.9.2}%
+\contentsline {subsection}{\numberline {4.9.3}Contexte de réalisation}{25}{subsection.4.9.3}%
+\contentsline {subsection}{\numberline {4.9.4}Conclusion sur l'activité}{25}{subsection.4.9.4}%
+\contentsline {section}{\numberline {4.10}Activité 9 - validation fonctionnelle et rédaction de la documentation pour les utilisateurs}{25}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Compétence et son fondement}{25}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}Présentation et réalisation de l'activité}{26}{subsection.4.10.2}%
+\contentsline {subsection}{\numberline {4.10.3}Contexte de réalisation}{26}{subsection.4.10.3}%
+\contentsline {subsection}{\numberline {4.10.4}Conclusion sur l'activité}{26}{subsection.4.10.4}%
+\contentsline {section}{\numberline {4.11}Activité 10 - formation des utilisateurs, mise en place d’une enquête de satisfaction ultérieure}{26}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Compétence et son fondement}{26}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}Présentation et réalisation de l'activité}{26}{subsection.4.11.2}%
+\contentsline {subsection}{\numberline {4.11.3}Contexte de réalisation}{26}{subsection.4.11.3}%
+\contentsline {subsection}{\numberline {4.11.4}Conclusion sur l'activité}{26}{subsection.4.11.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Résumé}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Ouverture sur l'avenir}{27}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}L'entreprise et ses perspectives}{27}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Le service et ses évolutions}{28}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Les apports professionnels et personnels}{28}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Avenir professionnel}{29}{subsection.5.2.4}%

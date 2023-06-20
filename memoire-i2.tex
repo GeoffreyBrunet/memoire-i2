@@ -18,6 +18,12 @@
 \usepackage{pdfpages}
 \usepackage{lmodern}
 \usepackage{titling}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\definecolor{beamergreen}{RGB}{3, 95, 1}
+\titleformat{\chapter}{\normalfont\huge\bfseries\color{blue}}{\thechapter}{1em}{}
+\titleformat{\section}{\normalfont\Large\bfseries\color{red}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{beamergreen}}{\thesubsection}{1em}{}
 
 \begin{document}
 
@@ -59,7 +65,7 @@ Je tiens à remercier également tous les collaborateurs du pôle "recherche et 
 \newline
 Mes remerciements vont aussi vers les membres du personnel de l’EPSI Auxerre pour leur confiance et les formations prodiguées.
 L’enseignement de qualité du titre professionnel « Expert en Informatique et système  d’information »  a parfaitement été en adéquation avec mes objectifs tout au long de l’année. 
-Plus spécifiquement, je tiens à remercier monsieur Sébastien Guilbert (responsable Business Unit Enseignement supérieur au pôle formation 58-89) pour sa confiance pour mon intégration au sein de l’EPSI, et ayant apporté son aide autant sur des plans professionnels que personnels.
+Plus spécifiquement, je tiens à remercier monsieur Sébastien GUILBERT (responsable Business Unit Enseignement supérieur au pôle formation 58-89) pour sa confiance pour mon intégration au sein de l’EPSI, et ayant apporté son aide autant sur des plans professionnels que personnels.
 \newline
 \newline
 J’aimerais aussi exprimer ma gratitude envers tous les formateurs étant intervenus tout au long de cette année de bachelor, qui ont pris le temps de nous préparer et de fournir des formations de qualité, et écouter nos difficultés lorsque nous en avions.
@@ -386,6 +392,21 @@ Les exigences de l'infrascture sont définis sur 3 paramètres:
     \item \textbf{Disponibilité}: le SI doit rendre accessible les données, rapidement et avec une constance dans le temps.
     \item \textbf{Intégrité}: le SI doit être en mesure de vérifier et prouver qu'aucune modification n'a été apportée aux données.
     \item \textbf{Tracabilité}: le SI doit mettre en place un historique des accès aux données, historique qui se doit d'être lisible et vérifiable.
+  \end{enumerate}
+  \subsubsection{Norme ISO 27000}
+  Comme indiqué précédement dans le PSSI, être conforme à la norme ISO 27000 serais un avantage considérable, car elle est un ensemble de normes internationales qui fournit des lignes directrices et des bonnes pratiques pour la gestion de la sécurité de l'information au sein d'une organisation.
+  Voici les principales recommendations après une lecture des documents des normes ISO 27000, 27001, 27005, et une liste de d'actions à mettre en place pour y répondre:
+  \begin{enumerate}
+    \item \textbf{Politique de sécurité}: élaboration d'une politique de sécurité claire et documentée qui énonce les principes, les objectifs et les responsabilités en matière de sécurité de l'information.
+    \item \textbf{Gestion des risques}: effectuer une évaluation approfondie des risques liés à la totalité des microservices de QiBates, en identifiant les informations sensibles, les menaces potentielles et les vulnérabilités.
+      \ Établissement de mesures de sécurité appropriées pour atténuer ces risques.
+    \item \textbf{Contrôles de sécurité}: mise en place des contrôles de sécurité techniques et managériales conformes aux recommandations de la norme ISO 27000.
+      \ ela peut inclure la mise en œuvre de mécanismes d'authentification et d'autorisation, le chiffrement des données, la surveillance des activités, la gestion des journaux et la protection contre les attaques.
+    \item \textbf{Sensibilisation et formation}: sensibilisation et formation des membres de l'équipe du le projet aux principes de sécurité de l'information, aux bonnes pratiques de développement sécurisé et aux politiques de sécurité établies.
+    \item \textbf{Gestion des incidents}: mise en place un processus de gestion des incidents pour détecter, signaler, investiguer et répondre aux incidents de sécurité éventuels.
+      \ Établissement de mécanismes de signalement des incidents et vérification de l'application des mesures correctives appropriées.
+    \item \textbf{Évaluation et amélioration continue}: effectuer des audits réguliers pour évaluer la conformité aux exigences de la norme ISO 27000 et pour identifier les domaines d'amélioration.
+      \ Mise en place un processus d'amélioration continue pour renforcer la sécurité de l'information tout au long du projet.
   \end{enumerate}
 \subsection{Contexte de réalisation}
 \subsection{Conclusion sur l'activité}

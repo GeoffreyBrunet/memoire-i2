@@ -20,9 +20,11 @@
 \usepackage{titling}
 \usepackage{titlesec}
 \usepackage{xcolor}
+\definecolor{beamerblue}{RGB}{38, 38, 134}
+\definecolor{beamerred}{RGB}{191, 1, 1}
 \definecolor{beamergreen}{RGB}{3, 95, 1}
-\titleformat{\chapter}{\normalfont\huge\bfseries\color{blue}}{\thechapter}{1em}{}
-\titleformat{\section}{\normalfont\Large\bfseries\color{red}}{\thesection}{1em}{}
+\titleformat{\chapter}{\normalfont\huge\bfseries\color{beamerblue}}{\thechapter}{1em}{}
+\titleformat{\section}{\normalfont\Large\bfseries\color{beamerred}}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\large\bfseries\color{beamergreen}}{\thesubsection}{1em}{}
 
 \begin{document}
@@ -93,7 +95,7 @@ Le deuxième pôle est un pôle Recherche et Développement, avec une équipe d�
 \section{Organigramme de Quartz-Insight}
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.50,center]{schemas/organigramme-quartz-insight.png}
+    \includegraphics[scale=0.48,center]{schemas/organigramme-quartz-insight.png}
     \caption{Organigramme de Quartz-Insight}
 \end{figure}
 La société est gérée par monsieur Christian Montilaud.
@@ -275,8 +277,29 @@ Les exigences de l'infrascture sont définis sur 3 paramètres:
   \item Sécurité: Les accès et les modifications aux profils utilisateurs doivent être contrôlés et sécurisés.
   \item Scalabilité: Le système doit être évolutif pour gérer une augmentation du nombre de demandes de gestion de profils sans compromettre les performances.
 \end{itemize}
+\newline
+\newline
+Chaque microservice est un conteneur Docker.
+Nos serveurs Docker sont des machines virtuelles hébergées chez Orange Business Service, avec Ubuntu comme système d'exploitation.
+Les caractéristiques physiques des machines virtuelles changent en fonction de la dite machine virtuelle, en fonction de l'OS (car nous avons aussi des machines virtuelles sur Windows pour les labs) et des zones de celle-ci (développement, pré-production et production).
 \subsubsection{Documentation}
+Toute l'analyse et la documentation produite a été mise à disposition des collaborateurs dans un dossier, sur le OneDrive (service de stockage en ligne collaboratif de chez Microsoft).
 \subsection{Contexte de réalisation}
+Cette activité a été réalisée en amon du projet, juste après la demande de refonte du service monolithique en microservices. Elle a donc été la première action réalisée après la dite demande.
+\newline
+\newline
+Voici mes  éléments personnels quand à la réalisation de cette activitée :
+\newline
+J'ai utilisé mes compétences acquises en formation en architecture logicielle pour mieux analyser les différents microservices et leurs intéractions.
+\newline
+J'ai utilisé mes compétences en modélisation de données acquises au cours de ma formation pour la réalisation du MCD précédement présenté.
+\newline
+\newline
+Ainsi que les éléments organisationnels et structurels :
+\newline
+J'ai analysé l'ancien SGBD pour comprendre comment les données étaient sauvegardées.
+\newline
+J'ai demandé aux autres dévelopeurs du pôle R&D quels microservices communiquent entre eux et comment pour réaliser le schéma précédent (numéro 4.1).
 \subsection{Conclusion sur l'activité}
 
 \section{Activité 2 - cartographie des informations sensibles, évaluation des risques et définition d'une politique de sécurité}
@@ -401,7 +424,7 @@ Les exigences de l'infrascture sont définis sur 3 paramètres:
     \item \textbf{Gestion des risques}: effectuer une évaluation approfondie des risques liés à la totalité des microservices de QiBates, en identifiant les informations sensibles, les menaces potentielles et les vulnérabilités.
       \ Établissement de mesures de sécurité appropriées pour atténuer ces risques.
     \item \textbf{Contrôles de sécurité}: mise en place des contrôles de sécurité techniques et managériales conformes aux recommandations de la norme ISO 27000.
-      \ ela peut inclure la mise en œuvre de mécanismes d'authentification et d'autorisation, le chiffrement des données, la surveillance des activités, la gestion des journaux et la protection contre les attaques.
+      \ cela peut inclure la mise en œuvre de mécanismes d'authentification (0Auth a été utilisé pour ce projet) et d'autorisation, le chiffrement des données, la surveillance des activités, la gestion des journaux (avec Loki et Grafana) et la protection contre les attaques.
     \item \textbf{Sensibilisation et formation}: sensibilisation et formation des membres de l'équipe du le projet aux principes de sécurité de l'information, aux bonnes pratiques de développement sécurisé et aux politiques de sécurité établies.
     \item \textbf{Gestion des incidents}: mise en place un processus de gestion des incidents pour détecter, signaler, investiguer et répondre aux incidents de sécurité éventuels.
       \ Établissement de mécanismes de signalement des incidents et vérification de l'application des mesures correctives appropriées.
@@ -409,7 +432,25 @@ Les exigences de l'infrascture sont définis sur 3 paramètres:
       \ Mise en place un processus d'amélioration continue pour renforcer la sécurité de l'information tout au long du projet.
   \end{enumerate}
 \subsection{Contexte de réalisation}
+La mise en place du PSSI et de l'analyse des normes ISO a été réalisée en cours de projet, après le prototypage de celui-ci, mais avant la mise en production des micro-services développés.
+\newline
+\newline
+Voici mes éléments personnels quand à la réalisation de cette activitée:
+\newline
+Grâce à notre formation en RGPD et sécurité des S.I. suivie en entreprise, j'ai été informé des principes de protection des données et des bonnes pratiques de sécurité.
+\newline
+La formation sur les normes ISO 27000 et sur la réalisation d'un PSSI, suivie à l'EPSI, m'a doté d'une solide compréhension des normes de sécurité de l'information et des étapes nécessaires pour mettre en place un PSSI.
+\newline
+\newline
+Ainsi que les éléments organisationnels et structurels :
+\newline
+En me référant à différents PSSI trouvés en ligne, j'ai lu et analysé les bonnes pratiques de sécurité de l'information mises en œuvre par d'autres organisations pour les adapter à mon projet (tel le PSSI de l'université de Poitiers).
+\newline
+Le formateur de l'EPSI m'a fourni des ressources telles que les normes ISO 27000-27001-27002-27005, me permettant de me familiariser avec les exigences et les recommandations des normes citées précédement.
 \subsection{Conclusion sur l'activité}
+J'ai donc realisé une maquête de PSSI et une analyse des normes ISO 27000 dans le cadre de cet activité. La formation à l'EPSI ainsi que l'application pour ce projet m'a permis de capitaliser et d'appliquer mes connaissances dans une situation concrête.
+\newline
+Les analyses produites m'ont servis pendant la réalisaiton du projet, pour analyser les points sensibles des microservices, et d'actions à mettre en place pour améliorer la sécurité du système d’information.
 
 \section{Activité 3 - analyse des données de références pour la création d'un référentiel de données}
 \subsection{Compétence et son fondement}

@@ -3,31 +3,31 @@
 \contentsline {chapter}{\numberline {2}Introduction}{4}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Environnement professionnel}{5}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Organigramme de Quartz-Insight}{5}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Présentation de l'étudiant}{7}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Activités de la structure}{8}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Présentation des activités confiées}{8}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Présentation du Système d’Information}{9}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Valorisation des compétences}{10}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Présentation globale du projet}{10}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Activité 1 - cartographie complète du système d'information existant}{10}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Compétence et son fondement}{10}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Présentation et réalisation de l'activité}{11}{subsection.4.2.2}%
-\contentsline {subsubsection}{Collecte des informations}{11}{subsection.4.2.2}%
-\contentsline {subsubsection}{Identification des composants métier}{11}{Item.8}%
-\contentsline {subsubsection}{Analyse fonctionnelle}{12}{Item.8}%
-\contentsline {subsubsection}{Analyse applicative}{13}{Item.12}%
-\contentsline {subsubsection}{Analyse de l'infrastructure}{15}{figure.4.2}%
-\contentsline {subsubsection}{Documentation}{15}{figure.4.2}%
-\contentsline {subsection}{\numberline {4.2.3}Contexte de réalisation}{15}{subsection.4.2.3}%
+\contentsline {section}{\numberline {3.2}Présentation de l'étudiant}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Activités de la structure}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Présentation des activités confiées}{7}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Présentation du Système d’Information}{8}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Valorisation des compétences}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Présentation globale du projet}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Activité 1 - cartographie complète du système d'information existant}{9}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Compétence et son fondement}{9}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Présentation et réalisation de l'activité}{10}{subsection.4.2.2}%
+\contentsline {subsubsection}{Collecte des informations}{10}{subsection.4.2.2}%
+\contentsline {subsubsection}{Identification des composants métier}{10}{Item.8}%
+\contentsline {subsubsection}{Analyse fonctionnelle}{11}{Item.8}%
+\contentsline {subsubsection}{Analyse applicative}{12}{Item.12}%
+\contentsline {subsubsection}{Analyse de l'infrastructure}{14}{figure.4.2}%
+\contentsline {subsubsection}{Documentation}{14}{figure.4.2}%
+\contentsline {subsection}{\numberline {4.2.3}Contexte de réalisation}{14}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Conclusion sur l'activité}{15}{subsection.4.2.4}%
 \contentsline {section}{\numberline {4.3}Activité 2 - cartographie des informations sensibles, évaluation des risques et définition d'une politique de sécurité}{15}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Compétence et son fondement}{15}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Présentation et réalisation de l'activité}{16}{subsection.4.3.2}%
-\contentsline {subsubsection}{}{16}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}Présentation et réalisation de l'activité}{15}{subsection.4.3.2}%
+\contentsline {subsubsection}{}{15}{subsection.4.3.2}%
 \contentsline {subsubsection}{}{16}{Item.17}%
-\contentsline {subsubsection}{}{18}{Item.23}%
-\contentsline {subsubsection}{Norme ISO 27000}{19}{Item.32}%
-\contentsline {subsection}{\numberline {4.3.3}Contexte de réalisation}{20}{subsection.4.3.3}%
+\contentsline {subsubsection}{}{17}{Item.23}%
+\contentsline {subsubsection}{Norme ISO 27000}{18}{Item.32}%
+\contentsline {subsection}{\numberline {4.3.3}Contexte de réalisation}{19}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Conclusion sur l'activité}{20}{subsection.4.3.4}%
 \contentsline {section}{\numberline {4.4}Activité 3 - analyse des données de références pour la création d'un référentiel de données}{20}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Compétence et son fondement}{20}{subsection.4.4.1}%

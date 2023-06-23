@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.16)  20 JUN 2023 17:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.16)  20 JUN 2023 18:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -375,7 +375,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-runsystem(touch /tmp/w18-test-20236201063)...disabled (restricted).
+runsystem(touch /tmp/w18-test-20236201134)...disabled (restricted).
 
 
 
@@ -545,7 +545,7 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidthlast=\dimen257
 \titlewidthfirst=\dimen258
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 28.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 30.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -555,25 +555,25 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 ) (./memoire-i2.aux)
 \openout1 = `memoire-i2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-Package hyperref Info: Link coloring OFF on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+Package hyperref Info: Link coloring OFF on input line 30.
  (./memoire-i2.out) (./memoire-i2.out)
 \@outlinefile=\write3
 \openout3 = `memoire-i2.out'.
@@ -613,8 +613,8 @@ Package hyperref Info: Link coloring OFF on input line 28.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \degres on input line 28.
-LaTeX Info: Redefining \up on input line 28.
+LaTeX Info: Redefining \degres on input line 30.
+LaTeX Info: Redefining \up on input line 30.
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count345
@@ -642,40 +642,40 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 <images/./logos/logo-epsi-v2.png, id=273, 288.07625pt x 125.46875pt>
 File: images/./logos/logo-epsi-v2.png Graphic file (type png)
 <use images/./logos/logo-epsi-v2.png>
-Package pdftex.def Info: images/./logos/logo-epsi-v2.png  used on input line 36.
+Package pdftex.def Info: images/./logos/logo-epsi-v2.png  used on input line 38.
 (pdftex.def)             Requested size: 142.26378pt x 61.96266pt.
 <images/./logos/logo-quartz-insight-v2.png, id=275, 1525.7pt x 552.0625pt>
 File: images/./logos/logo-quartz-insight-v2.png Graphic file (type png)
 <use images/./logos/logo-quartz-insight-v2.png>
-Package pdftex.def Info: images/./logos/logo-quartz-insight-v2.png  used on input line 36.
+Package pdftex.def Info: images/./logos/logo-quartz-insight-v2.png  used on input line 38.
 (pdftex.def)             Requested size: 142.26378pt x 51.46931pt.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 36.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 38.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 36.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 38.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 36.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 38.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 36.
+(Font)              <12> on input line 38.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 36.
+(Font)              <8> on input line 38.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 36.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 36.
+(Font)              <6> on input line 38.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 38.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -699,17 +699,17 @@ l.41 ...ion sur l'activité}{23}{subsection.4.5.4}
  [2]
 Chapitre 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--75
+Underfull \hbox (badness 10000) in paragraph at lines 64--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--75
+Underfull \hbox (badness 10000) in paragraph at lines 64--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--75
+Underfull \hbox (badness 10000) in paragraph at lines 64--77
 
  []
 
@@ -718,12 +718,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--75
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 Chapitre 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--90
+Underfull \hbox (badness 10000) in paragraph at lines 80--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--90
+Underfull \hbox (badness 10000) in paragraph at lines 80--92
 
  []
 
@@ -734,75 +734,55 @@ Chapitre 3.
 <images/schemas/organigramme-quartz-insight.png, id=382, 994.71625pt x 492.84125pt>
 File: images/schemas/organigramme-quartz-insight.png Graphic file (type png)
 <use images/schemas/organigramme-quartz-insight.png>
-Package pdftex.def Info: images/schemas/organigramme-quartz-insight.png  used on input line 96.
-(pdftex.def)             Requested size: 497.3569pt x 246.42001pt.
+Package pdftex.def Info: images/schemas/organigramme-quartz-insight.png  used on input line 98.
+(pdftex.def)             Requested size: 477.45837pt x 236.5611pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--107
+Underfull \hbox (badness 10000) in paragraph at lines 101--109
 
  []
 
 <CV-Geoffrey-Brunet.pdf, id=383, 597.50829pt x 845.0471pt>
 File: CV-Geoffrey-Brunet.pdf Graphic file (type pdf)
 <use CV-Geoffrey-Brunet.pdf>
-Package pdftex.def Info: CV-Geoffrey-Brunet.pdf  used on input line 110.
+Package pdftex.def Info: CV-Geoffrey-Brunet.pdf  used on input line 112.
 (pdftex.def)             Requested size: 459.51454pt x 718.29344pt.
 
-Overfull \hbox (89.62871pt too wide) in paragraph at lines 110--111
+Overfull \hbox (89.62871pt too wide) in paragraph at lines 112--113
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 130.71216pt on input line 111.
+LaTeX Warning: Float too large for page by 130.71216pt on input line 113.
 
 [5
 
 
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc} <./images/schemas/organigramme-quartz-insight.png>] [6] [7 <./CV-Geoffrey-Brunet.pdf>]
-Overfull \hbox (0.8606pt too wide) in paragraph at lines 114--116
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc} <./images/schemas/organigramme-quartz-insight.png>] [6 <./CV-Geoffrey-Brunet.pdf>]
+Overfull \hbox (0.8606pt too wide) in paragraph at lines 116--118
 \OT1/lmr/m/n/10.95 (BI) et l'En-ter-prise Per-for-mance Ma-na-ge-ment (EPM). Elle pro-pose une gamme
  []
 
 
-Overfull \hbox (4.7074pt too wide) in paragraph at lines 131--132
+Overfull \hbox (4.7074pt too wide) in paragraph at lines 133--134
 []\OT1/lmr/m/n/10.95 R^^Sesolution de ti-ckets d'in-ci-dents sur l'add-in Qi-Bates pour Google Sheets 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 138--145
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 140--147
 
  []
 
-[9]
+[8]
 Chapitre 4.
-[10
+[9
 
-] [11]
-Overfull \hbox (1.22559pt too wide) in paragraph at lines 200--201
+] [10]
+Overfull \hbox (1.22559pt too wide) in paragraph at lines 202--203
 []\OT1/lmr/m/n/10.95 Pour l'ana-lyse fonc-tion-nelle, j'ai di-vis^^Se celle-ci en 6 sous-analyses dis-tinctes : 
  []
 
-./memoire-i2.tex:212: Misplaced alignment tab character &.
-l.212 ...rs utilisateurs par un membre du pôle R&
-                                                  D, avec validation du dire...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./memoire-i2.tex:213: Misplaced alignment tab character &.
-l.213 ...fil utilisateur par un membre du pôle R&
-                                                  D, avec validation du dire...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
 ./memoire-i2.tex:214: Misplaced alignment tab character &.
-l.214 ...fil utilisateur par un membre du pôle R&
+l.214 ...rs utilisateurs par un membre du pôle R&
                                                   D, avec validation du dire...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -811,8 +791,28 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./memoire-i2.tex:222: Misplaced alignment tab character &.
-l.222 ...modifications sont transmises au pôle R&
+./memoire-i2.tex:215: Misplaced alignment tab character &.
+l.215 ...fil utilisateur par un membre du pôle R&
+                                                  D, avec validation du dire...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./memoire-i2.tex:216: Misplaced alignment tab character &.
+l.216 ...fil utilisateur par un membre du pôle R&
+                                                  D, avec validation du dire...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./memoire-i2.tex:224: Misplaced alignment tab character &.
+l.224 ...modifications sont transmises au pôle R&
                                                   D, et un membre de celui-c...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -821,9 +821,9 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[12]
-./memoire-i2.tex:228: Misplaced alignment tab character &.
-l.228 ...modifications sont transmises au pôle R&
+[11]
+./memoire-i2.tex:230: Misplaced alignment tab character &.
+l.230 ...modifications sont transmises au pôle R&
                                                   D, et un membre de celui-c...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -833,38 +833,85 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Overfull \hbox (4.57043pt too wide) in paragraph at lines 232--233
+Overfull \hbox (4.57043pt too wide) in paragraph at lines 234--235
 \OT1/lmr/m/n/10.95 pro-fil uti-li-sa-teur, les entr^^Sees com-prennent les in-for-ma-tions n^^Secessaires
  []
 
-<images/schemas/schema-qibates-original.png, id=463, 1115.16624pt x 613.29124pt>
+<images/schemas/schema-qibates-original.png, id=458, 1115.16624pt x 613.29124pt>
 File: images/schemas/schema-qibates-original.png Graphic file (type png)
 <use images/schemas/schema-qibates-original.png>
-Package pdftex.def Info: images/schemas/schema-qibates-original.png  used on input line 240.
+Package pdftex.def Info: images/schemas/schema-qibates-original.png  used on input line 242.
 (pdftex.def)             Requested size: 446.0586pt x 245.31215pt.
-[13 <./images/schemas/schema-qibates-original.png>]
-<images/schemas/ralph-diagram.png, id=471, 847.165pt x 947.54pt>
+[12 <./images/schemas/schema-qibates-original.png>]
+<images/schemas/ralph-diagram.png, id=467, 847.165pt x 947.54pt>
 File: images/schemas/ralph-diagram.png Graphic file (type png)
 <use images/schemas/ralph-diagram.png>
-Package pdftex.def Info: images/schemas/ralph-diagram.png  used on input line 251.
+Package pdftex.def Info: images/schemas/ralph-diagram.png  used on input line 253.
 (pdftex.def)             Requested size: 338.85999pt x 379.00928pt.
- [14 <./images/schemas/ralph-diagram.png>]
-Overfull \hbox (1.76932pt too wide) in paragraph at lines 284--287
+ [13 <./images/schemas/ralph-diagram.png>]
+
+./memoire-i2.tex:280: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.280 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./memoire-i2.tex:281: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.281 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./memoire-i2.tex:302: Misplaced alignment tab character &.
+l.302 ...andé aux autres dévelopeurs du pôle R&
+                                                  D quels microservices comm...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--303
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--303
+
+ []
+
+[14]
+Overfull \hbox (1.76932pt too wide) in paragraph at lines 307--310
 \OT1/lmr/bx/n/10.95 Comp[]etence choi-sie \OT1/lmr/m/n/10.95 : A1C5 { Iden-ti-fier les in-for-ma-tions sen-sibles, les risques,
  []
 
 [15]
-Overfull \hbox (7.70377pt too wide) in paragraph at lines 314--315
+Overfull \hbox (7.70377pt too wide) in paragraph at lines 337--338
 \OT1/lmr/m/n/10.95 va-li-der la confor-mit^^Se de votre syst^^Reme ^^Ra des normes et r^^Seglementations
  []
 
 
-Overfull \hbox (2.92734pt too wide) in paragraph at lines 315--316
+Overfull \hbox (2.92734pt too wide) in paragraph at lines 338--339
 []\OT1/lmr/m/n/10.95 Recherche des cer-ti-fi-ca-tions ap-pro-pri^^Sees, telles que ISO 27001 (norme
  []
 
-./memoire-i2.tex:323: Misplaced alignment tab character &.
-l.323 ...echnique, le CEO, les membres du pôle R&
+./memoire-i2.tex:346: Misplaced alignment tab character &.
+l.346 ...echnique, le CEO, les membres du pôle R&
                                                   D, et assurez-vous de leur...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -873,18 +920,19 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[16]
-Overfull \hbox (8.43396pt too wide) in paragraph at lines 329--330
+
+Overfull \hbox (8.43396pt too wide) in paragraph at lines 352--353
 []\OT1/lmr/m/n/10.95 Mise en place de m^^Secanismes de sau-ve-garde r^^Seguliers et des proc^^Sedures
  []
 
 
-Overfull \hbox (11.59727pt too wide) in paragraph at lines 333--334
+Overfull \hbox (11.59727pt too wide) in paragraph at lines 356--357
 \OT1/lmr/m/n/10.95 dents de s^^Securit^^Se, y com-pris la no-ti-fi-ca-tion, l'in-ves-ti-ga-tion, la r^^Sesolution
  []
 
-./memoire-i2.tex:344: Misplaced alignment tab character &.
-l.344 ...  \item Formation des membres du pôle R&
+[16]
+./memoire-i2.tex:367: Misplaced alignment tab character &.
+l.367 ...  \item Formation des membres du pôle R&
                                                   D à la lecture et l'analy...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -893,9 +941,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[17]
-./memoire-i2.tex:369: Misplaced alignment tab character &.
-l.369         \item Les membres du pôle R&
+./memoire-i2.tex:392: Misplaced alignment tab character &.
+l.392         \item Les membres du pôle R&
                                            D auront des privilèges spécifi...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -904,24 +951,34 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-
-Overfull \hbox (9.8627pt too wide) in paragraph at lines 385--386
+[17]
+Overfull \hbox (9.8627pt too wide) in paragraph at lines 408--409
 []\OT1/lmr/m/n/10.95 Le pro-jet doit se confor-mer aux r^^Seglementations ap-pli-cables en mati^^Rere
  []
 
 [18]
-Overfull \hbox (14.18283pt too wide) in paragraph at lines 401--403
+Overfull \hbox (14.18283pt too wide) in paragraph at lines 424--426
 \OT1/lmr/m/n/10.95 tions sen-sibles, les me-naces po-ten-tielles et les vuln^^Serabilit^^Ses.  []Etablissement
  []
 
 
-Overfull \hbox (9.43565pt too wide) in paragraph at lines 405--406
+Overfull \hbox (9.43565pt too wide) in paragraph at lines 428--429
 []\OT1/lmr/bx/n/10.95 Sensibilisation et for-ma-tion \OT1/lmr/m/n/10.95 : sen-si-bi-li-sa-tion et for-ma-tion des membres
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--450
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--450
+
+ []
+
 [19]
-./memoire-i2.tex:416: Misplaced alignment tab character &.
-l.416 ... d’information (business intelligence &
+./memoire-i2.tex:457: Misplaced alignment tab character &.
+l.457 ... d’information (business intelligence &
                                                    big data)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -930,40 +987,43 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-<images/schemas/features-mcd-ralph2.png, id=525, 593.21625pt x 532.99126pt>
+<images/schemas/features-mcd-ralph2.png, id=526, 593.21625pt x 532.99126pt>
 File: images/schemas/features-mcd-ralph2.png Graphic file (type png)
 <use images/schemas/features-mcd-ralph2.png>
-Package pdftex.def Info: images/schemas/features-mcd-ralph2.png  used on input line 423.
+Package pdftex.def Info: images/schemas/features-mcd-ralph2.png  used on input line 464.
 (pdftex.def)             Requested size: 237.28229pt x 213.19272pt.
-<images/schemas/settings-mcd-kingcandy.png, id=526, 911.405pt x 541.02126pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/schemas/settings-mcd-kingcandy.png, id=527, 911.405pt x 541.02126pt>
 File: images/schemas/settings-mcd-kingcandy.png Graphic file (type png)
 <use images/schemas/settings-mcd-kingcandy.png>
-Package pdftex.def Info: images/schemas/settings-mcd-kingcandy.png  used on input line 428.
+Package pdftex.def Info: images/schemas/settings-mcd-kingcandy.png  used on input line 469.
 (pdftex.def)             Requested size: 364.55554pt x 216.40466pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/schemas/notifications-mcd-calhoun.png, id=527, 573.14125pt x 392.46625pt>
+<images/schemas/notifications-mcd-calhoun.png, id=528, 573.14125pt x 392.46625pt>
 File: images/schemas/notifications-mcd-calhoun.png Graphic file (type png)
 <use images/schemas/notifications-mcd-calhoun.png>
-Package pdftex.def Info: images/schemas/notifications-mcd-calhoun.png  used on input line 433.
+Package pdftex.def Info: images/schemas/notifications-mcd-calhoun.png  used on input line 474.
 (pdftex.def)             Requested size: 229.25243pt x 156.9837pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/schemas/cap-theoreme.png, id=528, 1684.2925pt x 927.465pt>
+<images/schemas/cap-theoreme.png, id=529, 1684.2925pt x 927.465pt>
 File: images/schemas/cap-theoreme.png Graphic file (type png)
 <use images/schemas/cap-theoreme.png>
-Package pdftex.def Info: images/schemas/cap-theoreme.png  used on input line 438.
+Package pdftex.def Info: images/schemas/cap-theoreme.png  used on input line 479.
 (pdftex.def)             Requested size: 421.0721pt x 231.86568pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20 <./images/schemas/features-mcd-ralph2.png>] [21 <./images/schemas/settings-mcd-kingcandy.png> <./images/schemas/notifications-mcd-calhoun.png>] [22 <./images/schemas/cap-theoreme.png>]
+[20] [21 <./images/schemas/features-mcd-ralph2.png> <./images/schemas/settings-mcd-kingcandy.png>] [22 <./images/schemas/notifications-mcd-calhoun.png> <./images/schemas/cap-theoreme.png>]
 <images/schemas/schema-qibates-v2.png, id=550, 1166.3575pt x 789.95125pt>
 File: images/schemas/schema-qibates-v2.png Graphic file (type png)
 <use images/schemas/schema-qibates-v2.png>
-Package pdftex.def Info: images/schemas/schema-qibates-v2.png  used on input line 461.
+Package pdftex.def Info: images/schemas/schema-qibates-v2.png  used on input line 502.
 (pdftex.def)             Requested size: 466.53474pt x 315.9749pt.
 
 
@@ -972,51 +1032,51 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [23
 
 ] [24 <./images/schemas/schema-qibates-v2.png>]
-Overfull \hbox (35.4951pt too wide) in paragraph at lines 484--484
+Overfull \hbox (35.4951pt too wide) in paragraph at lines 525--525
 |[]\OT1/lmr/bx/n/14.4 Activit^^Se 8 - mise en place d'une so-lu-tion d'int^^Segration
  []
 
 
-Overfull \hbox (5.64816pt too wide) in paragraph at lines 493--493
+Overfull \hbox (5.64816pt too wide) in paragraph at lines 534--534
 |[]\OT1/lmr/bx/n/14.4 Activit^^Se 9 - va-li-da-tion fonc-tion-nelle et r^^Sedaction
  []
 
 
-Overfull \hbox (13.84486pt too wide) in paragraph at lines 495--498
+Overfull \hbox (13.84486pt too wide) in paragraph at lines 536--539
 \OT1/lmr/bx/n/10.95 Comp[]etence choi-sie \OT1/lmr/m/n/10.95 : A5C7 { V^^Serifier la confor-mit^^Se entre la so-lu-tion d^^Sevelopp^^See
  []
 
 [25]
-Overfull \hbox (7.47214pt too wide) in paragraph at lines 502--502
+Overfull \hbox (7.47214pt too wide) in paragraph at lines 543--543
 \OT1/lmr/bx/n/14.4 en place d'une enqu^ete de sa-tis-fac-tion ult^^Serieure| 
  []
 
 [26]
 Chapitre 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--524
+Underfull \hbox (badness 10000) in paragraph at lines 555--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--534
+Underfull \hbox (badness 10000) in paragraph at lines 568--575
 
  []
 
 [27
 
 ]
-Overfull \hbox (1.63315pt too wide) in paragraph at lines 538--540
+Overfull \hbox (1.63315pt too wide) in paragraph at lines 579--581
 \OT1/lmr/bx/n/10.95 sources de donn[]ees \OT1/lmr/m/n/10.95 :  En per-met-tant l'int^^Segration de nou-velles sources
  []
 
 
-Overfull \hbox (11.9618pt too wide) in paragraph at lines 540--543
+Overfull \hbox (11.9618pt too wide) in paragraph at lines 581--584
 \OT1/lmr/m/n/10.95 pr^^Secoce des probl^^Remes, l'op-ti-mi-sa-tion des res-sources et la prise de d^^Secisions
  []
 
 
-Overfull \hbox (11.38585pt too wide) in paragraph at lines 552--558
+Overfull \hbox (11.38585pt too wide) in paragraph at lines 593--599
 \OT1/lmr/m/n/10.95 Boot et An-gu-lar. J'ai ren-forc^^Se ma compr^^Sehension des pro-ces-sus de d^^Seveloppement
  []
 
@@ -1033,15 +1093,15 @@ Package rerunfilecheck Info: File `memoire-i2.out' has not changed.
 (rerunfilecheck)             Checksum: 4F615D90E131AAF6AC0ECC1DED059CDC;17677.
  ) 
 Here is how much of TeX's memory you used:
- 17999 strings out of 475735
- 282004 string characters out of 5782247
+ 18001 strings out of 475735
+ 282037 string characters out of 5782247
  1871759 words of memory out of 5000000
- 38301 multiletter control sequences out of 15000+600000
+ 38303 multiletter control sequences out of 15000+600000
  553790 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,9n,93p,871b,717s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on memoire-i2.pdf (30 pages, 737787 bytes).
+Output written on memoire-i2.pdf (30 pages, 741090 bytes).
 PDF statistics:
  653 PDF objects out of 1000 (max. 8388607)
  573 compressed objects within 6 object streams

@@ -301,13 +301,46 @@ J'ai analysé l'ancien SGBD pour comprendre comment les données étaient sauveg
 \newline
 J'ai demandé aux autres dévelopeurs du pôle R&D quels microservices communiquent entre eux et comment pour réaliser le schéma précédent (numéro 4.1).
 \subsection{Conclusion sur l'activité}
+J'ai réalisé avec succès une cartographie complète du système d'information existant dans le cadre de la refonte du service monolithique en microservices.
+J'ai utilisé mes compétences en architecture logicielle et en modélisation de données pour analyser les microservices et leurs interactions, les flux de données et les interactions entre les services.
+Cette cartographie approfondie m'a permis d'identifier les fonctionnalités clés du projet, fournissant une base solide pour la conception des microservices.
+J'ai mis à disposition de l'équipe la documentation complète pour faciliter la collaboration.
+Mis à par un manque de documentation, aucun problème n'a eu lieu quand à la réalisation de cette activitée, donc les documents produits ont été validé par mon directeur technique.
 
 \section{Activité 2 - cartographie des informations sensibles, évaluation des risques et définition d'une politique de sécurité}
 \subsection{Compétence et son fondement}
 \textbf{Bloc de compétences}: A1 – Analyse et définition de la stratégie des systèmes d’information
 \newline
 \textbf{Compétence choisie}: A1C5 – Identifier les informations sensibles, les risques, les zones critiques et les chemins d’attaque possibles d’un système d’information existant à l’aide de la cartographie afin d’aider le/la RSSI à définir une politique de sécurité
+\textbf{Détails}: Cette compétence consiste à démontrer ma capacité à présenter une cartographie des risques du SI analysant les éléments suivants :
+\begin{itemize}
+  \item la confidentialité : préciser les règles d’authentification et d’accès aux ressources informatiques du SI
+  \item l’intégrité : préciser les règles garantissant l’exactitude, la complétude et la non altération des données du SI;
+  \item la disponibilité : préciser les procédures mises en place pour garantir la disponibilité des ressources informatiques du SI.
+  \item formaliser à l’écrit une analyse du résultat de cette cartographie mettant en exergue les risques et zones critiques du SI
+\end{itemize}
 \subsection{Présentation et réalisation de l'activité}
+  \subsubsection{Analyse de l'existant et des points chauds}
+  Voici les informations principales relatives à la sécurité actuellement mise en place, en amont de la réalisation d'un PSSI (Politique de sécurité du système d'information):
+  \begin{itemize}
+    \item la confidentialité: Les accès aux ressources ce font avec des rôles définis par le directeur technique et en accord avec les membres du pôle R&D.
+    La double authentification est obligatoire, ainsi qu'un mot de passe répondant à une politique définie au préalable.
+    Les données dans les bases de données sont chiffrées.
+    \item l’intégrité: préciser les règles garantissant l’exactitude, la complétude et la non altération des données du SI ;
+    une sauvegarde incrémentale des bases de données a lieu chaque jour et les journaux d'événements sont aussi sauvegardés.
+    \item la disponibilité: un démarrage d'un nouveau SGBD avec une sauvegarde de l'ancienne base de données peut être réalisé depuis OBS rapidement mais (mais aucun système de réplication comme avec PG-Pool II n'est actuellement en place).
+  \end{itemize}
+  \newline
+  \newline
+  Voici la liste des points chauds présents dans la réalisation de ce projet:
+  \begin{enumerate}
+    \item \textbf{La migration de la base de données} peut être un point chaud en raison du risque de perte de données ou de corruption pendant le processus de migration.
+    \item \textbf{La sécurité des microservices}, la communication entre les microservices, l'authentification des utilisateurs et la gestion des autorisations  sont des points critiques qui doivent être soigneusement mis en place pour éviter les vulnérabilités potentielles.
+    \item \textbf{La gestion des accès aux API}, avec la gestion des identifiants et des jetons d'authentification doit être sécurisée pour protéger les ressources sensibles.
+    \item \textbf{La sécurité de l'interface web}, dont celle-ci doit être protégée contre les attaques de sécurité courantes, telles que les attaques XSS (Cross-Site Scripting) ou les attaques CSRF (Cross-Site Request Forgery).
+    \item \textbf{La gestion des privilèges d'accès} est cruciale pour éviter les fuites d'informations sensibles ou les accès non autorisés.
+    \item \textbf{La surveillance et détection des incidents} pour détecter les activités anormales ou les tentatives d'intrusion est essentielle pour identifier rapidement les incidents de sécurité et y répondre de manière appropriée.
+  \end{enumerate}
   Pour faciliter l'identification des informations sensibles, les risques, les zones critiques et les chemins d’attaque possibles, j'ai réalisé une première mouture d'un Plan de Sécurité des Systèmes d'Information (PSSI).
   Celui ci ce base sur 3 principaux axes, les principes organisationnels, les principes de mise en œuvre et les principes techniques.
   \subsubsection{}
@@ -343,7 +376,7 @@ J'ai demandé aux autres dévelopeurs du pôle R&D quels microservices communiqu
   \begin{enumerate}
     \item \textbf{Aspects humains}:
       \begin{itemize}
-        \item Implication les parties prenantes clés, telles que le directeur technique, le CEO, les membres du pôle R&D, et assurez-vous de leur engagement envers les objectifs de sécurité du projet, au travers de réunions.
+        \item Implication les parties prenantes clés, telles que le directeur technique, le CEO, les membres du pôle R&D, et confirmer leurs engagements envers les objectifs de sécurité du projet, au travers de réunions.
         \item Établissement clair des rôles et des responsabilités en matière de sécurité, en définissant les tâches et les autorisations appropriées pour chaque acteur du projet (en corrélation avec les différents droits d'administration du service gestionnaire de licences).
       \end{itemize}
     \item \textbf{Planification de la continuité des activités}:
@@ -431,7 +464,7 @@ J'ai demandé aux autres dévelopeurs du pôle R&D quels microservices communiqu
     \item \textbf{Évaluation et amélioration continue}: effectuer des audits réguliers pour évaluer la conformité aux exigences de la norme ISO 27000 et pour identifier les domaines d'amélioration.
       \ Mise en place un processus d'amélioration continue pour renforcer la sécurité de l'information tout au long du projet.
   \end{enumerate}
-\subsection{Contexte de réalisation}
+  \subsection{Contexte de réalisation}
 La mise en place du PSSI et de l'analyse des normes ISO a été réalisée en cours de projet, après le prototypage de celui-ci, mais avant la mise en production des micro-services développés.
 \newline
 \newline
@@ -451,12 +484,20 @@ Le formateur de l'EPSI m'a fourni des ressources telles que les normes ISO 27000
 J'ai donc realisé une maquête de PSSI et une analyse des normes ISO 27000 dans le cadre de cet activité. La formation à l'EPSI ainsi que l'application pour ce projet m'a permis de capitaliser et d'appliquer mes connaissances dans une situation concrête.
 \newline
 Les analyses produites m'ont servis pendant la réalisaiton du projet, pour analyser les points sensibles des microservices, et d'actions à mettre en place pour améliorer la sécurité du système d’information.
+\newline
+\newline
+Les évolutions possibles sont les mises à jour des normes ISO, et des bonnes pratiques pour la réalisation d'un PSSI, tout en effectuant une veille sur la sécurité informatique.
 
 \section{Activité 3 - analyse des données de références pour la création d'un référentiel de données}
 \subsection{Compétence et son fondement}
 \textbf{Bloc de compétences}: A4 – Pilotage de l’informatique décisionnelle d’un système d’information (business intelligence & big data)
 \newline
 \textbf{Compétence choisie}: A4C6 – Définir les données de référence de l’entreprise à partir des données utilisées pour créer un référentiel de données afin d’assurer la mise à disposition de données cohérentes aux directions métiers
+\newline
+\textbf{Détails}: Cette compétence consiste à démontrer ma capacité à identifier le référentiel de donnée de l’entreprise :
+\begin{itemize}
+  \item identifier et formalisre par écrit des critères de sélection et de validation des données existantes.
+\end{itemize}
 \subsection{Présentation et réalisation de l'activité}
 \subsection{Contexte de réalisation}
   \begin{figure}[h]
@@ -486,6 +527,13 @@ Les analyses produites m'ont servis pendant la réalisaiton du projet, pour anal
 \textbf{Bloc de compétences}: A5 – Développement d’une solution applicative spécifique et métier selon le projet de développement S.I.
 \newline
 \textbf{Compétence choisie}: A5C1 – Collecter les besoins métiers des utilisateurs en menant des interviews auprès d’eux pour comprendre leurs activités et leurs contraintes métier afin d’étudier les opportunités et la faisabilité technologique d’une solution applicative spécifique ou métier
+\newline
+\textbf{Détails}: Cette compétence consiste à démontrer ma capacité à présenter mes éléments de préparation à la collecte des besoins en détaillant :
+\begin{itemize}
+  \item l’interview-type à mener avec le questionnaire à utiliser en précisant la méthodologie de retranscription (tableau, graphique,...)
+  \item besoins métiers attendus par le client en termes de fonctionnalités
+  \item contraintes métiers à prendre en compte
+\end{itemize}
 \subsection{Présentation et réalisation de l'activité}
 \subsection{Contexte de réalisation}
 \subsection{Conclusion sur l'activité}
@@ -495,6 +543,14 @@ Les analyses produites m'ont servis pendant la réalisaiton du projet, pour anal
 \textbf{Bloc de compétences}: A5 – Développement d’une solution applicative spécifique et métier selon le projet de développement S.I.
 \newline
 \textbf{Compétence choisie}: A5C2 – Concevoir une architecture applicative selon la complexité du système d’information existant de type architecture distribuée, ou micro service évolutive et tolérante aux pannes
+\newline
+\textbf{Détails}: Cette compétence consiste à démontrer ma capacité à proposer une architecture applicative :
+\begin{itemize}
+  \item argumenter mon choix en formalisant par écrit les critères de stabilité, d’efficacité et
+de pérennité.
+  \item lister l’environnement technique adéquat à son architecture applicative (architecture distribuée, clusters,architecture micro services, REST, appel des services....)
+  \item présenter sous forme de schéma la logique du fonctionnement de notre architecture applicative
+\end{itemize}
 \subsection{Présentation et réalisation de l'activité}
 \subsection{Contexte de réalisation}
   \begin{figure}[h]
@@ -509,6 +565,14 @@ Les analyses produites m'ont servis pendant la réalisaiton du projet, pour anal
 \textbf{Bloc de compétences}: A5 – Développement d’une solution applicative spécifique et métier selon le projet de développement S.I.
 \newline
 \textbf{Compétence choisie}: A5C3 Développer une application adéquate selon la stratégie applicative de l’environnement en utilisant un langage de programmation approprié dans le respect du cahier des charges établi afin de répondre aux besoins utilisateurs/directions métiers
+\newline
+\textbf{Détails}: Cette compétence consiste à démontrer ma capacité à développer une application en
+adéquation avec l’environnement technique de l’entreprise (développement web, développement mobile, développement embarqué, développement IOT) :
+\begin{itemize} 
+ \item utiliser le langage de programmation approprié à l’environnement technique
+ \item concevoir et détaille une logique de développement dans le respect du cahier des charges
+ \item en résultat attendu, faire une démonstration technique de l'application (interprétation de certaines lignes de codes)
+\end{itemize}
 \subsection{Présentation et réalisation de l'activité}
 \subsection{Contexte de réalisation}
 \subsection{Conclusion sur l'activité}
@@ -518,6 +582,14 @@ Les analyses produites m'ont servis pendant la réalisaiton du projet, pour anal
 \textbf{Bloc de compétences}: A5 – Développement d’une solution applicative spécifique et métier selon le projet de développement S.I.
 \newline
 \textbf{Compétence choisie}: A5C5 – Effectuer les tests de la solution applicative paramétrée ou développée pour identifier les erreurs et dysfonctionnements et établir les plans de correction/d’amélioration avant sa mise en production
+\newline
+\textbf{Détails}: Cette compétence consiste à démonter ma capacité à tester une solution applicative :
+\begin{itemize}
+  \item rédiger un plan de test en précisant la typologie de test (unitaire, recette, d’intégration), les données de test et les résultats attendus
+  \item mettre en œuvre le plan de test à l’aide des jeux d’essai
+  \item utiliser un outil de testing de mon choix
+  \item Résultat attendu : présenter les facteurs de la bonne testabilité de son plan de test
+\end{itemize}
 \subsection{Présentation et réalisation de l'activité}
 \subsection{Contexte de réalisation}
 \subsection{Conclusion sur l'activité}
@@ -527,6 +599,12 @@ Les analyses produites m'ont servis pendant la réalisaiton du projet, pour anal
 \textbf{Bloc de compétences}: A5 – Développement d’une solution applicative spécifique et métier selon le projet de développement S.I.
 \newline
 \textbf{Compétence choisie}: A5C6 –Appliquer l’intégration continue dans le cadre du développement d’une application en utilisant un outil d’intégration continue afin de vérifier la conformité de la solution et les besoins utilisateurs
+\newline
+\textbf{Détails}: Cette compétence consiste à démonter ma capacité à utiliser un outil d’intégration continu :
+\begin{itemize}
+  \item installer et paramètre un outil d’intégration continu de mon choix
+  \item utiliser les différentes fonctionnalités de l’outil d’intégration choisi
+\end{itemize}
 \subsection{Présentation et réalisation de l'activité}
 \subsection{Contexte de réalisation}
 \subsection{Conclusion sur l'activité}
@@ -536,6 +614,12 @@ Les analyses produites m'ont servis pendant la réalisaiton du projet, pour anal
 \textbf{Bloc de compétences}: A5 – Développement d’une solution applicative spécifique et métier selon le projet de développement S.I.
 \newline
 \textbf{Compétence choisie}: A5C7 – Vérifier la conformité entre la solution développée ou paramétrée et les fonctionnalités attendues à partir des retours des directions métiers afin de rédiger la documentation et les référentiels orientés utilisateurs
+\newline
+\textbf{Détails}: Cette compétence consiste à démonter ma capacité à rédiger une documentation utilisateur :
+\begin{itemize}
+  \item comparer la réalisation technique et le cahier des charges
+  \item détailler avec une bonne qualité rédactionnelle la documentation utilisateur
+\end{itemize}
 \subsection{Présentation et réalisation de l'activité}
 \subsection{Contexte de réalisation}
 \subsection{Conclusion sur l'activité}
@@ -545,6 +629,13 @@ Les analyses produites m'ont servis pendant la réalisaiton du projet, pour anal
 \textbf{Bloc de compétences}: A5 – Développement d’une solution applicative spécifique et métier selon le projet de développement S.I.
 \newline
 \textbf{Compétence choisie}: A5C8 - Conduire le changement auprès des métiers lors du déploiement d’une solution applicative ou intégrée en mettant en place une démarche de participation, de communication et de formation pour accompagner les utilisateurs à l’intégration du nouvel outil dans leurs habitudes de travail
+\newline
+\textbf{Détails}: Cette compétence consiste à démonter ma capacité à proposer un plan d’action de conduite de changement :
+\begin{itemize}
+  \item identifier les actions à mener sur les 4 axes (Informer, communiquer, former, faire participer) :
+  \item présenter différents outils de changement (FutureWheel, Modèle transactionnel de William Bridge,...)
+  \item mettre en application son plan de conduite de changement via un outil
+\end{itemize}
 \subsection{Présentation et réalisation de l'activité}
 \subsection{Contexte de réalisation}
 \subsection{Conclusion sur l'activité}

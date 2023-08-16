@@ -198,6 +198,8 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/titling/titling.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/titling/titling.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd

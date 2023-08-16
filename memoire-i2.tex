@@ -20,6 +20,7 @@
 \usepackage{titling}
 \usepackage{titlesec}
 \usepackage{xcolor}
+\usepackage{float}
 \definecolor{beamerblue}{RGB}{38, 38, 134}
 \definecolor{beamerred}{RGB}{191, 1, 1}
 \definecolor{beamergreen}{RGB}{3, 95, 1}
@@ -407,7 +408,7 @@ Mis à par un manque de documentation, aucun problème n'a eu lieu quand à la r
         \item Un accès VPN est requis pour accéder aux serveurs et applications en cours de dévellopement, en plus d'un couple identifiant et mot de passe propre à chacun.
       \end{itemize}
   \end{enumerate}
-  \subsubsection{}
+  \subsubsection{PSSI}
   Voici une analyse des \textbf{principes techniques} de la PSSI:
   \begin{enumerate}
     \item \textbf{Identification des composants métier}:
@@ -499,28 +500,67 @@ Les évolutions possibles sont les mises à jour des normes ISO, et des bonnes p
   \item identifier et formalisre par écrit des critères de sélection et de validation des données existantes.
 \end{itemize}
 \subsection{Présentation et réalisation de l'activité}
-\subsection{Contexte de réalisation}
-  \begin{figure}[h]
+  Dans le chapitre "4.2.2", avec la figure "4.2 - Modèle de conception de données de la base de donnée du monolithe" et la description présente en dessous, le MCD est présent avec la description de chaque table.
+  L'architecture microservices m'a orienté quand à la division de la précédente base de données en 3 nouvelles bases de données distinctes.
+  \newline
+  Voici en dessous chaque MCD pour chacune des 3 bases de données, ainsi que la description de celui-ci.
+  Voici la description de la base de données pour sauvegarder les fonctionnalités:
+  \begin{itemize}
+    \item \textbf{Domain}: enregistre le domaine du client.
+    \item \textbf{User}: enregistre le nom de l'utilisateur.
+    \item \textbf{FeatureGroup}: enregistre un groupe de fonctionnalités.
+    \item \textbf{Feature}: enregistre une fonctionnalité.
+  \end{itemize}
+  \begin{figure}[H]
       \centering
       \includegraphics[scale=0.40,center]{schemas/features-mcd-ralph2.png}
       \caption{Modèle de conception de données des domaines clients}
   \end{figure}
-  \begin{figure}[h]
+  Voici la description de la base de données pour sauvegarder les paramètres des utilisateurs:
+  \begin{itemize}
+    \item \textbf{Domain}: enregistre le domaine du client.
+    \item \textbf{User}: enregistre le nom de l'utilisateur.
+    \item \textbf{DomainUserSetting}: enregistre un groupe de paramètres pour l'utilisateur.
+    \item \textbf{DefaultSetting}: enregistre un paramètre par défaut.
+  \end{itemize}
+  \begin{figure}[H]
       \centering
       \includegraphics[scale=0.40,center]{schemas/settings-mcd-kingcandy.png}
       \caption{Modèle de conception de données pour la sauvegarde des paramètres clients}
   \end{figure}
-  \begin{figure}[h]
+  Voici la description de la base de données pour sauvegarder les notifications à envoyer:
+  \begin{itemize}
+    \item \textbf{Domain}: enregistre le domaine du client.
+    \item \textbf{User}: enregistre le nom de l'utilisateur.
+    \item \textbf{Notification}: enregistre les notifications à envoyer à l'utilisateur.
+  \end{itemize}
+  \begin{figure}[H]
       \centering
       \includegraphics[scale=0.40,center]{schemas/notifications-mcd-calhoun.png}
-      \caption{Modèle de conception de données de sauvegarde des paramètres de notifications}
+      \caption{Modèle de conception de données de sauvegarde des notifications}
   \end{figure}
-  \begin{figure}[h]
+  Pour le choix du gestionnaire de base de données, j'ai utilisé le théorème CAP.
+  Il permet selon 3 critères, de séléctionner un SGBD en fonction des problématiques auquelles il doit répondre, comme la disponibilité, la cohérence et la distributivité.
+  La volonté de garder un SGBD avec un modèle relationnel, et en prenant en compte les autres SGBD présents dans l'infrastructure de QiBates, le choix c'est porté sur PostgreSQL, étant Open Source, et ayant une bonne documentation ainsi qu'une grande communauté.
+  \begin{figure}[H]
       \centering
       \includegraphics[scale=0.25,center]{schemas/cap-theoreme.png}
       \caption{Théorème CAP}
   \end{figure}
+  \newline
+  Chacune des 3 bases de données seras présente sur le même SGBD pour des raisons de coûts et de maintenance, car permettant d'éviter de payer 3 SGBD chez OBS, et n'ayant qu'un seul SGBD à répliquer, avec un outil comme PG-Pool II.
+\subsection{Contexte de réalisation}
+J'ai collaboré avec un développeur pour valider les MCD, et obtenu l'approbation de mon directeur technique après lui avoir présenté la refonte totale du SGDB.
+Trois bases de données ont ainsi été créées pour stocker les fonctionnalités, les paramètres des utilisateurs et les notifications, avec PostgreSQL comme choix de gestionnaire de base de données, validé en considération de l'infrastructure existante.
+Le SGBD est toujours managé par OBS, j'ai donc créé une nouvelle instance pour héberger les 3 nouvelles bases de données.
+
 \subsection{Conclusion sur l'activité}
+Au cours de cette activité, j'ai  exploré les tenants et aboutissants de l'analyse des données de référence pour la création d'un référentiel cohérent.
+En adaptant le modèle conceptuel de données du monolithe à l'architecture microservices, j'ai orchestré la création de trois bases distinctes pour sauvegarder les fonctionnalités, les paramètres des utilisateurs et les notifications.
+En optant pour PostgreSQL comme gestionnaire de base de données, en accord avec les besoins et la structure existante, j'ai mis en oeuvre mes capacités à réaliser cette activité, avec des choix justifiés et justifiables.
+\newline
+\newline
+Pour les évolutions dans 10 ans, les bases de données relationnelles ainsi que les schémas sous-jacents comme les MCD seront toujours d'actualité pour la sauvegarde de données, malgré l'essort des SGBD NoSQL (Not Only SQL, sauvegardant des données en format clef-valeur, JSON ou autre).
 
 \section{Activité 4 - analyse des besoins métiers pour une solution applicative sur mesure}
 \subsection{Compétence et son fondement}

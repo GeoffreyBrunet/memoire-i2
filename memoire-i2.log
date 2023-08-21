@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.7)  16 AUG 2023 12:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.7)  21 AUG 2023 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -375,7 +375,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-runsystem(touch /tmp/w18-test-2023816728)...disabled (restricted).
+runsystem(touch /tmp/w18-test-20238211028)...disabled (restricted).
 
 
 
@@ -696,7 +696,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 ...ion sur l'activité}{27}{subsection.4.5.4}
+l.45 ...ion sur l'activité}{28}{subsection.4.5.4}
                                                   % [1
 
 ])
@@ -742,7 +742,7 @@ Chapitre 3.
 File: images/schemas/organigramme-quartz-insight.png Graphic file (type png)
 <use images/schemas/organigramme-quartz-insight.png>
 Package pdftex.def Info: images/schemas/organigramme-quartz-insight.png  used on input line 99.
-(pdftex.def)             Requested size: 477.45837pt x 236.5611pt.
+(pdftex.def)             Requested size: 447.61818pt x 221.7765pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 102--110
 
@@ -768,8 +768,8 @@ LaTeX Warning: Float too large for page by 130.71216pt on input line 114.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.114 \end{figure}
-                   <./images/schemas/organigramme-quartz-insight.png>] [6] [7 <./CV-Geoffrey-Brunet.pdf>]
+l.116 \section
+              {Activités de la structure} <./images/schemas/organigramme-quartz-insight.png>] [6 <./CV-Geoffrey-Brunet.pdf>]
 Overfull \hbox (0.8606pt too wide) in paragraph at lines 117--119
 \OT1/lmr/m/n/10.95 (BI) et l'En-ter-prise Per-for-mance Ma-na-ge-ment (EPM). Elle pro-pose une gamme
  []
@@ -779,16 +779,16 @@ Overfull \hbox (4.7074pt too wide) in paragraph at lines 134--135
 []\OT1/lmr/m/n/10.95 R^^Sesolution de ti-ckets d'in-ci-dents sur l'add-in Qi-Bates pour Google Sheets 
  []
 
-[8]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 141--148
 
  []
 
-[9]
+[8]
 Chapitre 4.
-[10
+[9
 
-] [11]
+] [10]
 Overfull \hbox (1.22559pt too wide) in paragraph at lines 203--204
 []\OT1/lmr/m/n/10.95 Pour l'ana-lyse fonc-tion-nelle, j'ai di-vis^^Se celle-ci en 6 sous-analyses dis-tinctes : 
  []
@@ -833,7 +833,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[12]
+[11]
 ./memoire-i2.tex:231: Misplaced alignment tab character &.
 l.231 ...modifications sont transmises au pôle R&
                                                   D, et un membre de celui-c...
@@ -849,23 +849,23 @@ Overfull \hbox (4.57043pt too wide) in paragraph at lines 235--236
 \OT1/lmr/m/n/10.95 pro-fil uti-li-sa-teur, les entr^^Sees com-prennent les in-for-ma-tions n^^Secessaires
  []
 
-<images/schemas/schema-qibates-original.png, id=463, 1115.16624pt x 613.29124pt>
+<images/schemas/schema-qibates-original.png, id=458, 1115.16624pt x 613.29124pt>
 File: images/schemas/schema-qibates-original.png Graphic file (type png)
 <use images/schemas/schema-qibates-original.png>
 Package pdftex.def Info: images/schemas/schema-qibates-original.png  used on input line 243.
 (pdftex.def)             Requested size: 446.0586pt x 245.31215pt.
-[13
+[12
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.250     \item \textbf
                        {service Admin UI}: Interface web permettant la créa... <./images/schemas/schema-qibates-original.png>]
-<images/schemas/ralph-diagram.png, id=471, 847.165pt x 947.54pt>
+<images/schemas/ralph-diagram.png, id=467, 847.165pt x 947.54pt>
 File: images/schemas/ralph-diagram.png Graphic file (type png)
 <use images/schemas/ralph-diagram.png>
 Package pdftex.def Info: images/schemas/ralph-diagram.png  used on input line 254.
 (pdftex.def)             Requested size: 338.85999pt x 379.00928pt.
- [14
+ [13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -917,12 +917,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 289--304
 
  []
 
-[15]
+[14]
 Overfull \hbox (1.76932pt too wide) in paragraph at lines 313--317
 \OT1/lmr/bx/n/10.95 Comp[]etence choi-sie \OT1/lmr/m/n/10.95 : A1C5 { Iden-ti-fier les in-for-ma-tions sen-sibles, les risques,
  []
 
-[16]
+[15]
 ./memoire-i2.tex:327: Misplaced alignment tab character &.
 l.327 ...et en accord avec les membres du pôle R&
                                                   D.
@@ -959,7 +959,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[17]
+[16]
 Overfull \hbox (7.70377pt too wide) in paragraph at lines 371--372
 \OT1/lmr/m/n/10.95 va-li-der la confor-mit^^Se de votre syst^^Reme ^^Ra des normes et r^^Seglementations
  []
@@ -979,7 +979,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[18]
+[17]
 Overfull \hbox (8.43396pt too wide) in paragraph at lines 386--387
 []\OT1/lmr/m/n/10.95 Mise en place de m^^Secanismes de sau-ve-garde r^^Seguliers et des proc^^Sedures
  []
@@ -999,7 +999,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[19]
+[18]
 ./memoire-i2.tex:426: Misplaced alignment tab character &.
 l.426         \item Les membres du pôle R&
                                            D auront des privilèges spécifi...
@@ -1015,7 +1015,7 @@ Overfull \hbox (9.8627pt too wide) in paragraph at lines 442--443
 []\OT1/lmr/m/n/10.95 Le pro-jet doit se confor-mer aux r^^Seglementations ap-pli-cables en mati^^Rere
  []
 
-[20]
+[19]
 Overfull \hbox (14.18283pt too wide) in paragraph at lines 458--460
 \OT1/lmr/m/n/10.95 tions sen-sibles, les me-naces po-ten-tielles et les vuln^^Serabilit^^Ses.  []Etablissement
  []
@@ -1025,7 +1025,7 @@ Overfull \hbox (9.43565pt too wide) in paragraph at lines 462--463
 []\OT1/lmr/bx/n/10.95 Sensibilisation et for-ma-tion \OT1/lmr/m/n/10.95 : sen-si-bi-li-sa-tion et for-ma-tion des membres
  []
 
-[21]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 469--484
 
  []
@@ -1050,35 +1050,35 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[22]
-<images/schemas/features-mcd-ralph2.png, id=544, 593.21625pt x 532.99126pt>
+[21]
+<images/schemas/features-mcd-ralph2.png, id=540, 593.21625pt x 532.99126pt>
 File: images/schemas/features-mcd-ralph2.png Graphic file (type png)
 <use images/schemas/features-mcd-ralph2.png>
 Package pdftex.def Info: images/schemas/features-mcd-ralph2.png  used on input line 516.
 (pdftex.def)             Requested size: 237.28229pt x 213.19272pt.
- [23
+ [22
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.520   \begin{itemize}
                         <./images/schemas/features-mcd-ralph2.png>]
-<images/schemas/settings-mcd-kingcandy.png, id=551, 911.405pt x 541.02126pt>
+<images/schemas/settings-mcd-kingcandy.png, id=547, 911.405pt x 541.02126pt>
 File: images/schemas/settings-mcd-kingcandy.png Graphic file (type png)
 <use images/schemas/settings-mcd-kingcandy.png>
 Package pdftex.def Info: images/schemas/settings-mcd-kingcandy.png  used on input line 528.
 (pdftex.def)             Requested size: 364.55554pt x 216.40466pt.
-<images/schemas/notifications-mcd-calhoun.png, id=552, 573.14125pt x 392.46625pt>
+<images/schemas/notifications-mcd-calhoun.png, id=548, 573.14125pt x 392.46625pt>
 File: images/schemas/notifications-mcd-calhoun.png Graphic file (type png)
 <use images/schemas/notifications-mcd-calhoun.png>
 Package pdftex.def Info: images/schemas/notifications-mcd-calhoun.png  used on input line 539.
 (pdftex.def)             Requested size: 229.25243pt x 156.9837pt.
- [24
+ [23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.542   P
          our le choix du gestionnaire de base de données, j'ai utilisé le ... <./images/schemas/settings-mcd-kingcandy.png>]
-<images/schemas/cap-theoreme.png, id=560, 1684.2925pt x 927.465pt>
+<images/schemas/cap-theoreme.png, id=555, 1684.2925pt x 927.465pt>
 File: images/schemas/cap-theoreme.png Graphic file (type png)
 <use images/schemas/cap-theoreme.png>
 Package pdftex.def Info: images/schemas/cap-theoreme.png  used on input line 547.
@@ -1097,7 +1097,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[25
+[24
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1112,80 +1112,371 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--564
 
  []
 
-[26]
-<images/schemas/schema-qibates-v2.png, id=573, 1166.3575pt x 789.95125pt>
-File: images/schemas/schema-qibates-v2.png Graphic file (type png)
-<use images/schemas/schema-qibates-v2.png>
-Package pdftex.def Info: images/schemas/schema-qibates-v2.png  used on input line 598.
-(pdftex.def)             Requested size: 466.53474pt x 315.9749pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[27]
-Overfull \hbox (39.24718pt too wide) in paragraph at lines 605--611
-\OT1/lmr/m/n/10.95 (d^^Seveloppement web, d^^Seveloppement mo-bile, d^^Seveloppement em-barqu^^Se, d^^Seveloppement
- []
-
-[28
+[25]
+<images/screenshots/enquete-utilisateur.png, id=569, 1091.07625pt x 990.70125pt>
+File: images/screenshots/enquete-utilisateur.png Graphic file (type png)
+<use images/screenshots/enquete-utilisateur.png>
+Package pdftex.def Info: images/screenshots/enquete-utilisateur.png  used on input line 615.
+(pdftex.def)             Requested size: 436.42278pt x 396.27348pt.
+ [26] [27
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.613  \item c
-              oncevoir et détaille une logique de développement dans le re... <./images/schemas/schema-qibates-v2.png>]
-Overfull \hbox (35.4951pt too wide) in paragraph at lines 637--637
-|[]\OT1/lmr/bx/n/14.4 Activit^^Se 8 - mise en place d'une so-lu-tion d'int^^Segration
+l.625 \item P
+             ouvez-vous identifier des domaines où la performance du monoli... <./images/screenshots/enquete-utilisateur.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 636--640
+
+ []
+
+
+Overfull \hbox (4.29979pt too wide) in paragraph at lines 636--640
+\OT1/lmr/m/n/10.95 Je n'ai pas eu de dif-fi-cul^^Se par-ti-culi^^Rere quand ^^Ra la r^^Sealisation de cette comp^^Setence,
+ []
+
+[28]
+Overfull \hbox (17.21413pt too wide) in paragraph at lines 660--663
+[]\OT1/lmr/bx/n/10.95 Analyse des Be-soins \OT1/lmr/m/n/10.95 : J'ai com-menc^^Se par exa-mi-ner les be-soins sp^^Secifiques
+ []
+
+
+Overfull \hbox (20.59953pt too wide) in paragraph at lines 671--675
+\OT1/lmr/m/n/10.95 pour per-mettre la com-mu-ni-ca-tion entre les diff^^Serents ser-vices. J'ai ^^Segalement
  []
 
 [29]
-Overfull \hbox (5.64816pt too wide) in paragraph at lines 652--652
+Overfull \hbox (9.08565pt too wide) in paragraph at lines 694--697
+[]\OT1/lmr/bx/n/10.95 Documenter l'Ar-chi-tec-ture \OT1/lmr/m/n/10.95 : J'ai pr^^Separ^^Se une do-cu-men-ta-tion d^^Setaill^^See
+ []
+
+
+Overfull \hbox (26.7759pt too wide) in paragraph at lines 694--697
+\OT1/lmr/m/n/10.95 de l'ar-chi-tec-ture, y com-pris les in-ter-ac-tions entre les ser-vices, les d^^Sependances,
+ []
+
+<images/schemas/schema-qibates-v2.png, id=609, 1166.3575pt x 789.95125pt>
+File: images/schemas/schema-qibates-v2.png Graphic file (type png)
+<use images/schemas/schema-qibates-v2.png>
+Package pdftex.def Info: images/schemas/schema-qibates-v2.png  used on input line 706.
+(pdftex.def)             Requested size: 466.53474pt x 315.9749pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 709--731
+
+ []
+
+[30
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.731 \subsection{Contexte de réalisation}
+                                            <./images/schemas/schema-qibates-v2.png>]
+Overfull \hbox (5.45546pt too wide) in paragraph at lines 732--734
+\OT1/lmr/m/n/10.95 sch^^Semas aupr^^Res de mon di-rec-teur tech-nique, lors de r^^Seunions en vi-sio-conf^^Serences. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 735--740
+
+ []
+
+
+Overfull \hbox (39.24718pt too wide) in paragraph at lines 743--749
+\OT1/lmr/m/n/10.95 (d^^Seveloppement web, d^^Seveloppement mo-bile, d^^Seveloppement em-barqu^^Se, d^^Seveloppement
+ []
+
+[31]
+<images/screenshots/directories.png, id=624, 1383.1675pt x 646.415pt>
+File: images/screenshots/directories.png Graphic file (type png)
+<use images/screenshots/directories.png>
+Package pdftex.def Info: images/screenshots/directories.png  used on input line 757.
+(pdftex.def)             Requested size: 484.11588pt x 226.24864pt.
+ [32
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.764 \subsection{Compétence et son fondement}
+                                                <./images/screenshots/directories.png>]
+<images/screenshots/felix-test.png, id=631, 1557.82pt x 990.70125pt>
+File: images/screenshots/felix-test.png Graphic file (type png)
+<use images/screenshots/felix-test.png>
+Package pdftex.def Info: images/screenshots/felix-test.png  used on input line 779.
+(pdftex.def)             Requested size: 545.24518pt x 346.75063pt.
+<images/screenshots/felix-sonar.png, id=632, 1316.92pt x 990.70125pt>
+File: images/screenshots/felix-sonar.png Graphic file (type png)
+<use images/screenshots/felix-sonar.png>
+Package pdftex.def Info: images/screenshots/felix-sonar.png  used on input line 784.
+(pdftex.def)             Requested size: 460.92891pt x 346.75063pt.
+ [33] [34
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.787 \subsection{Contexte de réalisation}
+                                            <./images/screenshots/felix-test.png>]
+Overfull \hbox (35.4951pt too wide) in paragraph at lines 790--790
+|[]\OT1/lmr/bx/n/14.4 Activit^^Se 8 - mise en place d'une so-lu-tion d'int^^Segration
+ []
+
+[35
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.800 \end{itemize}
+                    <./images/screenshots/felix-sonar.png>]
+<images/screenshots/CICD-ralph.png, id=649, 1025.8325pt x 1322.9425pt>
+File: images/screenshots/CICD-ralph.png Graphic file (type png)
+<use images/screenshots/CICD-ralph.png>
+Package pdftex.def Info: images/screenshots/CICD-ralph.png  used on input line 807.
+(pdftex.def)             Requested size: 359.04675pt x 463.03682pt.
+ [36]
+Overfull \hbox (8.0235pt too wide) in paragraph at lines 810--812
+[]\OT1/lmr/m/n/10.95 Cette pi-pe-line Git-Lab suit plu-sieurs ^^Setapes pour tes-ter, construire et d^^Seployer
+ []
+
+./memoire-i2.tex:814: Undefined control sequence.
+l.814 \tightlist
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./memoire-i2.tex:818: Undefined control sequence.
+l.818   \tightlist
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 820.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [37
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.826   \end{itemize}
+                     {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc} <./images/screenshots/CICD-ralph.png>]
+./memoire-i2.tex:830: Undefined control sequence.
+l.830   \tightlist
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 837.
+./memoire-i2.tex:839: Undefined control sequence.
+l.839   \tightlist
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (60.11826pt too wide) in paragraph at lines 852--853
+[][]\OT1/lmr/bx/n/10.95 Etapes de construc-tion d'images Do-cker (\OT1/lmtt/b/n/10.95 build latest \OT1/lmr/bx/n/10.95 et \OT1/lmtt/b/n/10.95 build[]with[]tag\OT1/lmr/bx/n/10.95 ) \OT1/lmr/m/n/10.95 : 
+ []
+
+./memoire-i2.tex:854: Undefined control sequence.
+l.854   \tightlist
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 867.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+./memoire-i2.tex:872: Undefined control sequence.
+l.872   \tightlist
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<images/screenshots/CICD-Felix.png, id=663, 879.285pt x 1196.47pt>
+File: images/screenshots/CICD-Felix.png Graphic file (type png)
+<use images/screenshots/CICD-Felix.png>
+Package pdftex.def Info: images/screenshots/CICD-Felix.png  used on input line 892.
+(pdftex.def)             Requested size: 307.75436pt x 418.77078pt.
+[38{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+./memoire-i2.tex:901: Undefined control sequence.
+l.901 \tightlist
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./memoire-i2.tex:906: Undefined control sequence.
+l.906   \tightlist
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./memoire-i2.tex:917: Undefined control sequence.
+l.917   \tightlist
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[39
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.922     L
+           a politique de cache est définie pour le push et le pull. <./images/screenshots/CICD-Felix.png>]
+Overfull \hbox (60.93971pt too wide) in paragraph at lines 924--927
+[]\OT1/lmr/m/n/10.95 La cl^^Se du cache est bas^^See sur le ha-chage court du com-mit (\OT1/lmtt/m/n/10.95 CI[]COMMIT[]SHORT[]SHA\OT1/lmr/m/n/10.95 ). 
+ []
+
+./memoire-i2.tex:934: Undefined control sequence.
+l.934   \tightlist
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./memoire-i2.tex:939: Undefined control sequence.
+l.939     \tightlist
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./memoire-i2.tex:947: Undefined control sequence.
+l.947     \tightlist
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./memoire-i2.tex:962: Undefined control sequence.
+l.962   \tightlist
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (42.56363pt too wide) in paragraph at lines 964--967
+[]\OT1/lmr/m/n/10.95 L'^^Setape \OT1/lmr/bx/n/10.95 build[]docker \OT1/lmr/m/n/10.95 est ex^^Secut^^See seule-ment si la condi-tion \TS1/lmtt/m/n/10.95 $\OT1/lmtt/m/n/10.95 CI[]COMMIT[]TAG
+ []
+
+./memoire-i2.tex:972: Undefined control sequence.
+l.972   \tightlist
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./memoire-i2.tex:977: Undefined control sequence.
+l.977     \tightlist
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (15.45792pt too wide) in paragraph at lines 981--984
+[]\OT1/lmr/m/n/10.95 Une requ^ete POST est en-voy^^See ^^Ra l'URL du web-hook pour d^^Seclencher
+ []
+
+
+Overfull \hbox (5.3957pt too wide) in paragraph at lines 992--996
+\OT1/lmr/m/n/10.95 d'images Do-cker, tout en ^^Setant flexible gr^ace ^^Ra des condi-tions et des d^^Seclencheurs
+ []
+
+
+Overfull \hbox (5.64816pt too wide) in paragraph at lines 999--999
 |[]\OT1/lmr/bx/n/14.4 Activit^^Se 9 - va-li-da-tion fonc-tion-nelle et r^^Sedaction
  []
 
 
-Overfull \hbox (13.84486pt too wide) in paragraph at lines 654--659
+Overfull \hbox (13.84486pt too wide) in paragraph at lines 1001--1006
 \OT1/lmr/bx/n/10.95 Comp[]etence choi-sie \OT1/lmr/m/n/10.95 : A5C7 { V^^Serifier la confor-mit^^Se entre la so-lu-tion d^^Sevelopp^^See
  []
 
+[40]
+<images/screenshots/issues-gitlab.png, id=689, 1557.82pt x 990.70125pt>
+File: images/screenshots/issues-gitlab.png Graphic file (type png)
+<use images/screenshots/issues-gitlab.png>
+Package pdftex.def Info: images/screenshots/issues-gitlab.png  used on input line 1013.
+(pdftex.def)             Requested size: 545.24518pt x 346.75063pt.
 
-Overfull \hbox (7.47214pt too wide) in paragraph at lines 667--667
+Overfull \hbox (7.47214pt too wide) in paragraph at lines 1019--1019
 \OT1/lmr/bx/n/14.4 en place d'une enqu^ete de sa-tis-fac-tion ult^^Serieure| 
  []
 
-[30] [31]
+[41
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1020 \subsection{Compétence et son fondement}
+                                                 <./images/screenshots/issues-gitlab.png>] [42]
 Chapitre 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--696
+Underfull \hbox (badness 10000) in paragraph at lines 1038--1048
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--706
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1058
 
  []
 
-[32
+[43
 
 ]
-Overfull \hbox (1.63315pt too wide) in paragraph at lines 710--712
+Overfull \hbox (1.63315pt too wide) in paragraph at lines 1062--1064
 \OT1/lmr/bx/n/10.95 sources de donn[]ees \OT1/lmr/m/n/10.95 :  En per-met-tant l'int^^Segration de nou-velles sources
  []
 
 
-Overfull \hbox (11.9618pt too wide) in paragraph at lines 712--715
+Overfull \hbox (11.9618pt too wide) in paragraph at lines 1064--1067
 \OT1/lmr/m/n/10.95 pr^^Secoce des probl^^Remes, l'op-ti-mi-sa-tion des res-sources et la prise de d^^Secisions
  []
 
 
-Overfull \hbox (11.38585pt too wide) in paragraph at lines 724--730
+Overfull \hbox (11.38585pt too wide) in paragraph at lines 1076--1082
 \OT1/lmr/m/n/10.95 Boot et An-gu-lar. J'ai ren-forc^^Se ma compr^^Sehension des pro-ces-sus de d^^Seveloppement
  []
 
-[33]
+[44]
 \tf@thm=\write5
 \openout5 = `memoire-i2.thm'.
 
- [34] (./memoire-i2.aux)
+ [45] (./memoire-i2.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-03>
@@ -1194,18 +1485,18 @@ Package rerunfilecheck Info: File `memoire-i2.out' has not changed.
 (rerunfilecheck)             Checksum: 4F615D90E131AAF6AC0ECC1DED059CDC;17677.
  ) 
 Here is how much of TeX's memory you used:
- 18108 strings out of 475188
- 284079 string characters out of 5763802
+ 18312 strings out of 475188
+ 288500 string characters out of 5763802
  1935254 words of memory out of 5000000
- 38942 multiletter control sequences out of 15000+600000
- 598472 words of font info for 70 fonts, out of 8000000 for 9000
+ 39084 multiletter control sequences out of 15000+600000
+ 599398 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,10n,93p,871b,717s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on memoire-i2.pdf (35 pages, 752362 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on memoire-i2.pdf (46 pages, 4516057 bytes).
 PDF statistics:
- 682 PDF objects out of 1000 (max. 8388607)
- 597 compressed objects within 6 object streams
- 159 named destinations out of 1000 (max. 500000)
- 598 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 807 PDF objects out of 1000 (max. 8388607)
+ 692 compressed objects within 7 object streams
+ 210 named destinations out of 1000 (max. 500000)
+ 633 words of extra memory for PDF output out of 10000 (max. 10000000)
 

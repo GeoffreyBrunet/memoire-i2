@@ -96,7 +96,7 @@ Le deuxième pôle est un pôle Recherche et Développement, avec une équipe d�
 \section{Organigramme de Quartz-Insight}
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.48,center]{schemas/organigramme-quartz-insight.png}
+    \includegraphics[scale=0.45,center]{schemas/organigramme-quartz-insight.png}
     \caption{Organigramme de Quartz-Insight}
 \end{figure}
 La société est gérée par monsieur Christian Montilaud.
@@ -575,8 +575,68 @@ Pour les évolutions dans 10 ans, les bases de données relationnelles ainsi que
   \item contraintes métiers à prendre en compte
 \end{itemize}
 \subsection{Présentation et réalisation de l'activité}
+\subsubsection{Étapes de réalisation de l'interview}
+\begin{enumerate}
+  \item Préparation de l'Interview :
+  \begin{itemize}
+    \item J'ai identifié les modules du monolithe à transformer en microservices.
+    \item J'ai identifié les personnes clefs à interroger (trois développeurs du pôle R\&D seront intérrogés).
+    \item J'ai créé un modèle d'interview incluant des questions sur les fonctionnalités actuelles, les défis rencontrés et les besoins non satisfaits.
+  \end{itemize}
+   \item Conduite des Interviews :
+  \begin{itemize}
+    \item J'ai réalisé une enquête avec Google forms
+  \end{itemize}
+  \item Identification des Besoins Métiers :
+  \begin{itemize}
+    \item J'ai analysé les réponses du formulaire pour identifier les besoins spécifiques.
+    \item J'ai identifié les fonctionnalités clés à découper en microservices et les interactions nécessaires.
+  \end{itemize}
+  \item Formalisation des Contraintes Métiers :
+  \begin{itemize}
+    \item J'ai inclus les exigences de sécurité, de performances, d'évolutivité, etc.
+  \end{itemize}
+  \item Création des Questionnaires de Retranscription :
+  \begin{itemize}
+    \item J'ai créé des questionnaires spécifiques pour retranscrire les réponses des entretiens.
+    \item J'ai utilisé des tableaux ou des graphiques pour organiser les besoins et contraintes.
+  \end{itemize}
+  \item Présentation des Résultats :
+  \begin{itemize}
+    \item J'ai présenté les besoins et contraintes identifiés pour chaque module aux parties prenantes.
+    \item J'ai expliqué comment la transformation en microservices répondra aux besoins et contraintes métiers.
+  \end{itemize}
+\end{enumerate}
+\subsubsection{Outil pour la réalisation de l'interview}
+J'ai utilisé Google Forms, un outil de création de formulaire gratuit et en ligne, pour réaliser mon enquête.
+Celui-ci m'a permis de présenter les questions et d'obtenir les réponses des personnes concernées directement sur la page associée au formulaire.
+  \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.40,center]{screenshots/enquete-utilisateur.png}
+      \caption{Google Forms pour la réalisation de l'enquête utilisateurs}
+  \end{figure}
+Les résultats sont présents sur l'onglet "Réponses", et ne sont visibles que par le créateur du Google Forms par défaut.
+\subsubsection{Questions de l'enquête}
+Voici une liste de 7 questions proposées aux trois développeurs ciblés, ces questions ayant pour but de confirmer l'utilisation précédente de l'ancien service monolithique, les problèmes rencontrés, et les améliorations à apporter.
+\begin{enumerate}
+\item Quelles sont les fonctionnalités les plus critiques de chaque module du monolithe ?
+\item Comment interagissent ces fonctionnalités entre elles et avec d'autres modules ?
+\item Quels sont les principaux problèmes ou limitations que vous rencontrez actuellement avec le monolithe ?
+\item Pouvez-vous identifier des domaines où la performance du monolithe est insatisfaisante ?
+\item Quels sont les éléments de sécurité importants à prendre en compte pour chaque module ?
+\item Y a-t-il des fonctionnalités que vous souhaiteriez ajouter à chaque module à l'avenir ?
+\item Quels sont les améliorations en terme d'UX/UI design que vous souhaiteriez rencontrer ?
+\end{enumerate}
 \subsection{Contexte de réalisation}
+J'ai élaboré l'enquête en utilisant la plateforme Google Forms pour recueillir les informations nécessaires à la transformation du monolithe en microservices.
+Les questions ont été formulées de manière à comprendre comment les utilisateurs interagissent avec le système et à identifier leurs préférences en matière de fonctionnalités.
+Toute cette compétence à été réalisée à distance avec des outils de travail collaboratif en ligne, comme Microsoft Teams, pour communiquer avec les différents collaborateurs.
+Une réunion finale a eu lieu pour partager les résulats de l'enquête aux différents membres de l'équipe R\&D, pour valider les réponses et propositions de chacun.
 \subsection{Conclusion sur l'activité}
+Cette compétence n'a pas à mon avis d'évolution majeure à venir dans les 10 ans à venir, la plus grande dernièrement étant le passage du papier au numérique pour la réaliser.
+\newline
+\newline
+Je n'ai pas eu de difficulé particulière quand à la réalisation de cette compétence, et je ne vois non plus de piste de progression.
 
 \section{Activité 5 - conception d'une architecture applicative évolutive et tolérante aux pannes}
 \subsection{Compétence et son fondement}
@@ -592,13 +652,91 @@ de pérennité.
   \item présenter sous forme de schéma la logique du fonctionnement de notre architecture applicative
 \end{itemize}
 \subsection{Présentation et réalisation de l'activité}
-\subsection{Contexte de réalisation}
-  \begin{figure}[h]
+\subsubsection{Analyse en amont de la réalisation du schéma d'infrastructure}
+Étant déjà dans une architecture en microservices avec Qibates,
+j'ai choisis de continuer sur cette architecture, en rajoutant les nouveaux services créés depuis l'ancien service monolithique.
+J'ai décomposé les principaux points à prendre en compte, que voici:
+\begin{enumerate}
+\item \textbf{Analyse des Besoins} : J'ai commencé par examiner les besoins spécifiques de l'application,
+  en mettant l'accent sur la séparation des fonctionnalités en modules indépendants et en 
+  identifiant les services critiques.
+\item \textbf{Décomposition des Fonctionnalités} : J'ai découpé
+  l'application monolithe en modules autonomes, chacun représentant une
+  fonctionnalité ou un domaine spécifique. Chaque module serait
+  développé et déployé en tant que service indépendant.
+\item \textbf{Choix Technologiques} : J'ai sélectionné les technologies
+  appropriées pour la mise en œuvre de l'architecture microservices.
+J'ai opté pour Spring Boot pour le développement des services REST et
+  Angular pour l'interface utilisateur.
+\item \textbf{Communication entre Services} : J'ai mis en place des API REST
+  pour permettre la communication entre les différents services. J'ai
+  également utilisé un système de messagerie pour les notifications
+  asynchrones entre les services lorsque nécessaire.
+\item \textbf{Gestion des Erreurs et Tolérance aux Pannes} : J'ai intégré
+  des mécanismes de gestion des erreurs tels que les messages d'erreur
+  standardisés et les codes d'état HTTP. De plus, j'ai conçu des
+  stratégies de récupération pour garantir la continuité du service en
+  cas de défaillance d'un module.
+\item \textbf{Équilibrage de Charge} : J'ai mis en place un équilibrage de
+  charge pour répartir les requêtes entre les différents services,
+  assurant ainsi une utilisation optimale des ressources et une
+  meilleure réactivité de l'application.
+\item \textbf{Sécurité} : J'ai intégré des mécanismes de sécurité tels que
+  l'authentification et l'autorisation au niveau des services, ainsi
+  qu'une API Gateway (en utilisant notre serveur Nginx existant)
+  pour centraliser la gestion des accès.
+\item \textbf{Monitoring et Journalisation} : J'ai inclus des outils de
+  supervision pour surveiller les performances et la disponibilité des
+  services. J'ai également configuré la journalisation pour faciliter le
+  débogage en cas de problème. Telegraf est utilisé pour récupérer les métriques,
+  InfluxDB pour les stocker, et Grafana pour les afficher. Ces trois solutions sont
+  open-sources.
+\item \textbf{Documenter l'Architecture} : J'ai préparé une documentation
+  détaillée de l'architecture, y compris les interactions entre les
+  services, les dépendances, les flux de données et les points d'entrée.
+\item \textbf{Validation et Tests} : J'ai testé l'architecture en simulant
+  différentes conditions, notamment des pannes de services et des pics
+  de charge, pour m'assurer de sa stabilité et de sa capacité à répondre
+  aux besoins. L'utilisant en interne pour d'autres projets, j'ai utilisé Jmeter, une solution open-source,
+  pour effectuer ces tests de charge.
+\end{enumerate}
+\subsubsection{Réalisation du schéma d'infrastructure}
+  \begin{figure}[H]
       \centering
       \includegraphics[scale=0.40,center]{schemas/schema-qibates-v2.png}
       \caption{Schéma de la refonte en microservices}
   \end{figure}
+Voici donc le nouveau schéma de l'architecture de QiBates. La zone bleu
+en bas à gauche, ainsi que les bases de données liées aux microservices
+dans cette zone, sont les nouveaux microservices remplaçant l'ancien
+service monolithique.
+\newline
+Le service ``\textbf{Admin UI}'' est l'interface web permettant de gérer
+les 3 autres microservices liés.
+\newline
+``\textbf{Licence Admin}'' permet comme son nom l'indique de gérer les
+licences utilisateurs des clients, pour utiliser QiBates.
+\newline
+``\textbf{Settings Service}'' permet à un utilisateur de sauvegarder des
+paramètres pour QiBates comme bon lui semble.
+\newline
+``\textbf{Notification Service}'' permet l'envoie de notifications à un
+utilisateur, comme par exemple une notification de fin de tâche de
+calcul sur QiBates.
+\newline
+\newline
+L'interface d'administration est une application web, les 3 autres services sont des API REST,
+et PostgreSQL est utilisé comme SGBD pour les bases de données.
+Toutes les communications entre chaque service utilisent le protocole HTTP.
+\subsection{Contexte de réalisation}
+J'ai utilisé Draw.io, un logiciel gratuit et open-source pour réaliser les schémas d'architecture.
+J'ai aussi utilisé Microsoft Teams pour valider mes schémas auprès de mon directeur technique, lors de réunions en visioconférences.
 \subsection{Conclusion sur l'activité}
+Dans 10 ans, les architectures micro-services seront toujours présentes, même si celle-ci a des problèmes liés aux coûts qui peuvent se montrer excessif, malgré un avantage certain quand à la réduction de complexité et une augmentation de la fiabilité par rapport à une architecture monolithique.
+\newline
+\newline
+Ayant travaillé précédemment sur d'autres microservices de QiBates, je n'ai pas rencotré de difficulté partifuclière quand à la réalisation de cette activité.
+Le choix des technologies a été effectué en prenant en compte l'architecture actuelle, et les moyens de communications entre microservices sont basés sur les standards du web (émis par la W3C).
 
 \section{Activité 6 - développement d'une application pour répondre aux besoins utilisateurs/directions métiers}
 \subsection{Compétence et réalisation et son fondement}
@@ -614,6 +752,11 @@ adéquation avec l’environnement technique de l’entreprise (développement w
  \item en résultat attendu, faire une démonstration technique de l'application (interprétation de certaines lignes de codes)
 \end{itemize}
 \subsection{Présentation et réalisation de l'activité}
+  \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.35,center]{screenshots/directories.png}
+      \caption{Structure des dossiers pour deux microservices}
+  \end{figure}
 \subsection{Contexte de réalisation}
 \subsection{Conclusion sur l'activité}
 
@@ -631,6 +774,16 @@ adéquation avec l’environnement technique de l’entreprise (développement w
   \item Résultat attendu : présenter les facteurs de la bonne testabilité de son plan de test
 \end{itemize}
 \subsection{Présentation et réalisation de l'activité}
+  \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.35,center]{screenshots/felix-test.png}
+      \caption{Exemple de fausses données et d'un test unitaire les utilisant}
+  \end{figure}
+  \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.35,center]{screenshots/felix-sonar.png}
+      \caption{Logiciel de couverture de tests et d'analyse de code}
+  \end{figure}
 \subsection{Contexte de réalisation}
 \subsection{Conclusion sur l'activité}
 
@@ -646,6 +799,200 @@ adéquation avec l’environnement technique de l’entreprise (développement w
   \item utiliser les différentes fonctionnalités de l’outil d’intégration choisi
 \end{itemize}
 \subsection{Présentation et réalisation de l'activité}
+\subsubsection{Gitlab CI}
+TODO
+\subsubsection{Pipeline d'un microservice du serveur pour l'API REST}
+  \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.35,center]{screenshots/CICD-ralph.png}
+      \caption{Pipeline d'intégration et de déploiement continue d'un microservice d'API REST}
+  \end{figure}
+  Cette pipeline GitLab suit plusieurs étapes pour tester, construire et
+déployer une application :
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Configuration globale} :
+  \begin{itemize}
+  \tightlist
+  \item
+    L'image Docker \texttt{docker:19.03.12} est utilisée comme image de
+    base.
+  \item
+    Différentes variables sont définies, comme les informations
+    d'authentification Docker, le token SonarQube, l'URL du serveur
+    SonarQube, la profondeur du git, et des options Maven.
+  \end{itemize}
+\item
+  \textbf{Stages} :
+  \begin{itemize}
+  \tightlist
+  \item
+    Plusieurs étapes sont définies pour la pipeline : \texttt{test},
+    \texttt{analyze}, \texttt{build\ latest}, \texttt{build\_with\_tag},
+    \texttt{DEV}, \texttt{DEMO}, et \texttt{PROD}.
+  \end{itemize}
+\item
+  \textbf{Étape de test (\texttt{test})} :
+  \begin{itemize}
+  \tightlist
+  \item
+    Utilisation de l'image Maven pour exécuter les tests.
+  \item
+    Nettoyage du projet Maven.
+  \item
+    Exécution des tests avec JaCoCo pour mesurer la couverture.
+  \item
+    Exécution de SonarQube pour l'analyse de code statique avec le token
+    et l'URL fournis.
+  \end{itemize}
+\item
+  \textbf{Étapes de construction d'images Docker (\texttt{build\ latest}
+  et \texttt{build\_with\_tag})} :
+  \begin{itemize}
+  \tightlist
+  \item
+    Ces étapes construisent et poussent des images Docker vers un
+    registre.
+  \item
+    L'étape \texttt{build\ latest} construit une image avec l'étiquette
+    \texttt{latest}.
+  \item
+    L'étape \texttt{build\_with\_tag} construit une image avec
+    l'étiquette égale au tag du commit.
+  \item
+    La règle conditionnelle permet à \texttt{build\_with\_tag} de
+    s'exécuter uniquement si un tag de commit est présent
+    (\texttt{if:\ \textquotesingle{}\$CI\_COMMIT\_TAG\textquotesingle{}}).
+  \end{itemize}
+\item
+  **Étapes de déploiement (\texttt{DEV}, \texttt{DEMO}, \texttt{PROD}) :
+  \begin{itemize}
+  \tightlist
+  \item
+    Utilisation d'une image Curl pour effectuer des appels HTTP vers
+    Rundeck, notre outil d'automatisation de déploiement (pour mettre à
+    jour les images Docker et les déployer sur notre infrastructure).
+  \item
+    Chaque étape correspond à un environnement de déploiement.
+  \item
+    Les scripts d'exécution de déploiement sont déclenchés manuellement
+    (\texttt{when:\ manual}) et appellent l'API Rundeck pour déclencher
+    le déploiement vers chaque environnement avec les versions
+    appropriées.
+  \end{itemize}
+\end{enumerate}
+Cette pipeline réalise des tests, construit des images Docker, et
+effectue des déploiements vers différents environnements en utilisant
+des scripts et des appels d'API spécifiques.
+\subsubsection{Pipeline d'un microservice du serveur pour le client web}
+  \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.35,center]{screenshots/CICD-Felix.png}
+      \caption{Pipeline d'intégration et de déploiement continue du microservice de l'interface web}
+  \end{figure}
+  Cette pipeline GitLab comporte les étapes suivantes pour la
+construction, les tests, la construction d'images Docker et le
+déploiement d'une application :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Configuration de l'image et des services} :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    L'image de base utilisée est \texttt{node:16.13.1}.
+  \item
+    Les services comprennent Docker (\texttt{docker:19.03.12-dind}),
+    pour construire des images Docker dans le pipeline.
+  \end{itemize}
+\item
+  \textbf{Configuration du cache} :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Le cache est configuré pour des fichiers non suivis
+    (\texttt{untracked:\ true}).
+  \item
+    La politique de cache est définie pour le push et le pull.
+  \item
+    La clé du cache est basée sur le hachage court du commit
+    (\texttt{CI\_COMMIT\_SHORT\_SHA}).
+  \item
+    Les dossiers \texttt{node\_modules/} et d'autres dépendances sont
+    inclus dans le cache.
+  \end{itemize}
+\item
+  \textbf{Étapes du pipeline} :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{codequality} (étape de test) :
+
+    \begin{itemize}
+    \tightlist
+    \item
+      L'application est testée et sa couverture est mesurée.
+    \end{itemize}
+  \item
+    \textbf{build\_docker} (étape de construction d'image Docker) :
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Une image Docker est construite à partir du dossier de
+      l'application.
+    \item
+      Authentification Docker est effectuée via les informations du
+      registre GitLab.
+    \item
+      L'image est ensuite poussée vers le registre GitLab.
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{Règles de déploiement conditionnel} :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    L'étape \textbf{build\_docker} est exécutée seulement si la
+    condition \texttt{\$CI\_COMMIT\_TAG} est vraie (lorsqu'un tag est
+    ajouté au commit).
+  \end{itemize}
+\item
+  \textbf{Déploiement vers l'environnement de développement (dev)} :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{deploy\_dev} (étape de déploiement) :
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Une image Ruby est utilisée pour cette étape.
+    \item
+      Une requête POST est envoyée à l'URL du webhook pour déclencher le
+      déploiement automatisé.
+    \item
+      Cette étape est déclenchée manuellement (\texttt{when:\ manual}).
+    \item
+      Les détails de l'environnement de développement sont configurés, y
+      compris l'URL de déploiement.
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+Cette pipeline accomplit des tâches allant de la construction à la
+distribution automatisée de l'application, en passant par les tests et
+la création d'images Docker, tout en étant flexible grâce à des
+conditions et des déclencheurs spécifiques.
 \subsection{Contexte de réalisation}
 \subsection{Conclusion sur l'activité}
 
@@ -661,6 +1008,11 @@ adéquation avec l’environnement technique de l’entreprise (développement w
   \item détailler avec une bonne qualité rédactionnelle la documentation utilisateur
 \end{itemize}
 \subsection{Présentation et réalisation de l'activité}
+  \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.35,center]{screenshots/issues-gitlab.png}
+      \caption{Suivi des étapes clefs du développement sur Gitlab}
+  \end{figure}
 \subsection{Contexte de réalisation}
 \subsection{Conclusion sur l'activité}
 

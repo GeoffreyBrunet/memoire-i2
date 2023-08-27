@@ -21,12 +21,20 @@
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{float}
+\usepackage{hyperref}
 \definecolor{beamerblue}{RGB}{38, 38, 134}
 \definecolor{beamerred}{RGB}{191, 1, 1}
 \definecolor{beamergreen}{RGB}{3, 95, 1}
 \titleformat{\chapter}{\normalfont\huge\bfseries\color{beamerblue}}{\thechapter}{1em}{}
 \titleformat{\section}{\normalfont\Large\bfseries\color{beamerred}}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\large\bfseries\color{beamergreen}}{\thesubsection}{1em}{}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=green
+}
 
 \begin{document}
 
@@ -82,7 +90,7 @@ Pour finir, je tiens à présenter ma gratitude et mon respect à toutes les per
 
 \chapter{Introduction}
 
-Quartz-Insight est une société créée en 2015 par monsieur Christian Montillaud suite à une volonté de fonder une entreprise basée sur l’expertise,  la performance et le management des processus d’EPM et de BI des entreprises.
+Quartz-Insight est une société créée en 2015 par monsieur Christian Montillaud suite à une volonté de fonder une entreprise basée sur l’expertise,  la performance et le management des processus d’$\emph{EPM}^1$ et de $\emph{BI}^2$ des entreprises.
 L’origine du nom de l’entreprise proviens de la passion de monsieur  Montillaud pour les minéraux, et le Quartz étant choisis car étant un minéral transparent, valeur qu’il souhaite apporter à son entreprise.
 Le terme «Insight » quand à lui reprend la volonté d’avoir une expertise profonde, une véritable introspection sur les domaines de compétences de l’entreprise.
 \newline
@@ -100,13 +108,13 @@ Le deuxième pôle est un pôle Recherche et Développement, avec une équipe d�
 \section{Organigramme de Quartz-Insight}
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.45,center]{schemas/organigramme-quartz-insight.png}
+    \includegraphics[scale=0.42,center]{schemas/organigramme-quartz-insight.png}
     \caption{Organigramme de Quartz-Insight}
 \end{figure}
 La société est gérée par monsieur Christian Montilaud.
 Monsieur Gaël Roustan, est directeur technique et supervise le pôle Recherche et Développe\-ment.
 Madame Cécilia Bourvieux gère un projet de test de charge pour les solutions de BI, du développement logiciel à la mise en place et l’exécution chez les clients.
-Les membres du pôle R\&D ont en charge le développement des Add-Ins pour les logiciels de chez Microsoft et Google, ainsi que la création, la mise en production et la gestion des microservices sous-jacents, avec l’aide de notre CTO.
+Les membres du pôle R\&D (Recherche et développement) ont en charge le développement des Add-Ins pour les logiciels de chez Microsoft et Google, ainsi que la création, la mise en production et la gestion des microservices sous-jacents, avec l’aide de notre CTO.
 Le reste des collaborateurs sont des consultants apportant leurs expertises dans leurs domaines respectifs chez nos différents clients.
 \newline
 \newline
@@ -153,16 +161,16 @@ Il en vas de même pour les bases de données, que nous utilisons en version man
 \chapter{Valorisation des compétences}
 
 \section{Présentation globale du projet}
-En tant qu'alternant, le projet qui m'a été confié consistait à effectuer une transformation majeure d'un service existant, passant d'une architecture monolithique à une architecture de microservices.
-Le service initial comprenait une web UI, une API REST et une base de données destinées à stocker les informations des utilisateurs, telles que leurs noms, domaines d'entreprise et types de profil.
-L'architecture monolithique, qui reposait sur ASP.NET avec SQL Server comme SGBD, présentait des limitations en termes de flexibilité et d'évolutivité.
+En tant qu'alternant, le projet qui m'a été confié consistait à effectuer une transformation majeure d'un service existant, passant d'une architecture $\emph{monolithique}^4$ à une architecture de $\emph{microservices}^5$.
+Le service initial comprenait une web UI, une $\emph{API REST}^3$ et une base de données destinées à stocker les informations des utilisateurs, telles que leurs noms, domaines d'entreprise et types de profil.
+L'architecture monolithique, qui reposait sur $\emph{ASP.NET}^8$ avec SQL Server comme $\emph{SGBD}^7$, présentait des limitations en termes de flexibilité et d'évolutivité.
 L'objectif principal était donc de repenser cette infrastructure afin de permettre une évolutivité améliorée et des performances optimisées.
 Pour atteindre cet objectif, nous avons adopté une approche basée sur les microservices.
 Cela impliquait de diviser le service en plusieurs composants indépendants, chacun étant responsable d'une fonction spécifique.
 Ainsi, nous avons pu obtenir une architecture plus flexible, où chaque microservice peut être géré et déployé de manière autonome.
-Dans le cadre de cette transformation, nous avons choisi d'utiliser Angular pour la web UI, offrant ainsi une expérience utilisateur réactive et enrichissante.
-Pour l'API REST, nous avons opté pour Spring Boot, un framework Java réputé pour sa simplicité et sa robustesse.
-De plus, nous avons migré la base de données vers PostgreSQL, un système de gestion de base de données open source réputé pour ses performances et sa fiabilité.
+Dans le cadre de cette transformation, nous avons choisi d'utiliser $\emph{Angular}^9$ pour la web UI, offrant ainsi une expérience utilisateur réactive et enrichissante.
+Pour l'API REST, nous avons opté pour $\emph{Spring Boot}^{10}$, un $\emph{framework}^6$ Java réputé pour sa simplicité et sa robustesse.
+De plus, nous avons migré la base de données vers $\emph{PostgreSQL}^{11}$, un système de gestion de base de données open source réputé pour ses performances et sa fiabilité.
 Toutes ces technologies sont identiques pour le reste de nos microservices, nous permettant d’avoir une architecture uniformisée.
 
 \section{Activité 1 - cartographie complète du système d'information existant}
@@ -773,7 +781,7 @@ interactions avec les données.
 \textbf{Spring Boot} est un framework Java qui simplifie la création
 d'applications robustes et évolutives en gérant automatiquement la
 configuration et en fournissant des fonctionnalités prêtes à l'emploi,
-comme la création de routes pour une API REST, un ORM, et des outils
+comme la création de routes pour une API REST, un $\emph{ORM}^{12}$, et des outils
 pour tester notre code.
 
 \textbf{PostgreSQL} est un système de gestion de base de données
@@ -1434,6 +1442,54 @@ adaptation aux méthodes de travail à distance.
 Pour mettre en place le plan de conduite de changement, je me suis aidé
 des compétences acquises en formation et des ressources fournies par les
 formateurs.
+
+\chapter{Informations complémentaires}
+\section{Gestion de projet}
+J'ai choisi d'adopter une approche de gestion de projet agile pour
+réaliser mon projet. J'ai opté pour la méthodologie Scrum, avec des
+itérations de 2 semaines appelées ``sprints''.
+\newline
+Lors de la planification de chaque sprint, j'ai utilisé la technique du
+poker planning pour estimer la complexité des tâches et des problèmes à
+résoudre. Cette méthode collaborative a impliqué tous les membres de
+l'équipe dans la définition des difficultés et des délais, me permettant
+d'avoir un avis extérieur sur la difficulté possible des tâches du
+projet.
+\newline
+Les réunions matinales quotidiennes ont favorisé la communication et la
+résolution rapide des problèmes rencontrés. Ces réunions étaient
+essentielles pour permettre aux équipes de connaître l'avancé du projet.
+\newline
+En fin de sprint, j'ai effectué une rétrospective pour évaluer ce qui a
+bien fonctionné et ce qui pourrait être amélioré. Cette approche
+itérative m'a permis d'adapter le projet en cours de route et de
+répondre aux changements.
+\section{Gestion des coûts}
+En tant qu'alternant, j'ai pris en compte la gestion des coûts pour mon
+projet. Les principaux éléments de coûts comprenaient mon salaire en
+tant qu'alternant, ainsi que les ressources informatiques nécessaires
+pour le développement. J'ai utilisé des machines virtuelles et des
+systèmes de gestion de base de données (SGBD) hébergés sur le cloud
+d'Orange pour déployer et tester mon application. Ces services cloud ont
+engendré des coûts liés à leur utilisation. J'ai veillé à surveiller et
+à optimiser ces coûts tout au long du projet en utilisant des outils de
+suivi et en ajustant les ressources selon les besoins. Cette approche
+m'a permis de maintenir le projet dans les limites budgétaires définies
+tout en garantissant la continuité et la qualité du développement.
+\newline
+\newline
+Les coûts ont donc été divisés en deux catégories:
+\begin{itemize}
+\tightlist
+\item
+  mon salaire en tant qu'alternant
+\item
+  le coût de ma formation à l'EPSI et des formations en interne (comme
+  sur Angular par exemple)
+\item
+  le coût de l'infrastructure sur le cloud Orange.
+\end{itemize}
+
 \chapter{Conclusion}
 
 \section{Résumé}
@@ -1447,6 +1503,10 @@ J'ai appris à hiérarchiser les tâches, à gérer les priorités et à respect
 En conclusion, ce projet de gestion des licences utilisateurs chez Quartz-Insight a été une expérience enrichissante qui m'a permis de consolider mes compétences en développement de microservices et en gestion de projet de bout-en-bout pour un logiciel.
 Je suis fier d'avoir réussi à réaliser un produit fonctionnel et utile pour les entreprises, tout en respectant les exigences et les contraintes du projet.
 Je suis reconnaissant envers l'équipe de Quartz-Insight pour leur soutien et leur expertise tout au long du projet.
+\newline
+\newline
+Le code de mon dossier professionnel peut être trouvé à l'adresse suivante: \href{https://github.com/GeoffreyBrunet/memoire-i2}{https://github.com/GeoffreyBrunet/memoire-i2}.
+
 \section{Ouverture sur l'avenir}
 
 \subsection{L'entreprise et ses perspectives}
@@ -1486,5 +1546,44 @@ En résumé, ce projet m'a apporté des compétences techniques solides, renforc
 Pour mon avenir professionnel, je suis passionné par l'optimisation des performances en tant qu'ingénieur en logiciel. Je suis attiré par le développ\-ement frontend avec des langages et libraries tels que TypeScript, React ou Svelte, ainsi que le développement backend avec Rust. Mon objectif est de créer des applications web rapides et performantes en réduisant les temps de réponse et en optimisant les requêtes.
 J'explore également l'utilisation de Rust compilé en WebAssembly pour exécuter du code hautement performant dans les navigateurs web. Cela me permet de développer des applications web puissantes et réactives, offrant une expérience utilisateur améliorée.
 En résumé, mon ambition est de contribuer à des projets stimulants axés sur l'amélioration des performances. Je souhaite devenir un ingénieur en logiciel polyvalent, capable de créer des solutions performantes en utilisant React ou Svelte, TypeScript, Rust et WebAssembly, afin de garantir des expériences utilisateur exceptionnelles et d'optimiser l'efficacité des systèmes.
+
+\appendix
+\chapter*{Annexes}
+
+\section*{1. Définition d'EPM (Entreprise Performance Management)}
+Processus de gestion qui intègre la planification stratégique, la budgétisation, la prévision et la gestion des performances d'une entreprise pour atteindre ses objectifs.
+
+\section*{2. Définition de BI (Business Intelligence)}
+Processus de collecte, d'analyse et de présentation d'informations pertinentes pour prendre des décisions éclairées dans une entreprise.
+
+\section*{3. Définition d'API REST}
+Interface qui permet aux applications informatiques de communiquer entre elles via des requêtes HTTP en suivant les principes de l'architecture REST.
+
+\section*{4. Définition de Service monolithique}
+Application logicielle regroupant toutes ses fonctionnalités en un seul bloc, sans division en composants distincts.
+
+\section*{5. Définition de Microservices}
+Architecture logicielle où une application est décomposée en petits services indépendants, chacun exécutant une fonction spécifique.
+
+\section*{6. Définition de Framework}
+Ensemble de composants et de conventions prédéfinis facilitant le développement d'applications en fournissant une structure et des fonctionnalités réutilisables.
+
+\section*{7. Définition de SGBD}
+Logiciel permettant de stocker, organiser et manipuler des données de manière structurée.
+
+\section*{8. Définition d'ASP.NET}
+Framework de développement web de Microsoft permettant de créer des applications web dynamiques et interactives.
+
+\section*{9. Définition d'Angular}
+Plateforme de développement front-end open-source développée par Google, permettant de créer des applications web interactives et réactives.
+
+\section*{10. Définition de Spring Boot}
+Framework open-source basé sur Java qui facilite le développement rapide et la création d'applications Java autonomes, en simplifiant la configuration et la gestion des composants.
+
+\section*{11. Définition de PostgreSQL}
+Système de gestion de base de données open-source puissant et performant, basé sur le modèle relationnel, capable de gérer de grandes quantités de données et offrant une large gamme de fonctionnalités avancées.
+
+\section*{12. Définition d'ORM (Object-Relational Mapping)}
+Technique de programmation qui permet de faire correspondre les objets d'une application avec les enregistrements d'une base de données relationnelle de manière transparente.
 
 \end{document}

@@ -35,7 +35,7 @@
 \title{{\includegraphics[width = 50mm]{./logos/logo-epsi-v2.png}}{\includegraphics[width = 50mm]{./logos/logo-quartz-insight-v2.png}}\\[2cm]Dossier Professionnel: Expert / Experte en informatique \& Système d’Information (EISI)}
 \author{Brunet Geoffrey}
 \date{Année scolaire 2022/2023}
-\renewcommand{\maketitlehookb}{\centering Entreprise: Quartz Insight, École: EPSI campus d'Auxerre}
+\renewcommand{\maketitlehookb}{\centering Entreprise: Quartz Insight, École: EPSI campus d'Auxerre \newline Responsable de formation: Alexandre Lemaire}
 \maketitle
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
@@ -59,6 +59,10 @@
     tabsize=3
 }
 
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
 \tableofcontents
 
 \chapter{Remerciements}
@@ -68,7 +72,7 @@ Je tiens à remercier également tous les collaborateurs du pôle "recherche et 
 \newline
 Mes remerciements vont aussi vers les membres du personnel de l’EPSI Auxerre pour leur confiance et les formations prodiguées.
 L’enseignement de qualité du titre professionnel « Expert en Informatique et système  d’information »  a parfaitement été en adéquation avec mes objectifs tout au long de l’année. 
-Plus spécifiquement, je tiens à remercier monsieur Sébastien GUILBERT (responsable Business Unit Enseignement supérieur au pôle formation 58-89) pour sa confiance pour mon intégration au sein de l’EPSI, et ayant apporté son aide autant sur des plans professionnels que personnels.
+Plus spécifiquement, je tiens à remercier monsieur Sébastien GUILBERT (responsable Business Unit Enseignement supérieur au pôle formation 58-89) et Alexandre LEMAIRE (Responsable pédagogique) pour la confiance pour mon intégration au sein de l’EPSI, et ayant apporté leurs aides autant sur des plans professionnels que personnels.
 \newline
 \newline
 J’aimerais aussi exprimer ma gratitude envers tous les formateurs étant intervenus tout au long de cette année de bachelor, qui ont pris le temps de nous préparer et de fournir des formations de qualité, et écouter nos difficultés lorsque nous en avions.
@@ -266,8 +270,8 @@ Pour l'analyse fonctionnelle, j'ai divisé celle-ci en 6 sous-analyses distincte
     \item \textbf{User}: utilisateur pour utiliser QiBates.
     \item \textbf{PackProfile}: permet de lier un domaine à un utilisateur.
     \item \textbf{UserProfile}: profile utilisateur permettant à un utilisateur d'avoir une liste de paramètres.
-    \item \textbf{SettingProfile}: liste de paramètres de fonctionnalitées pour un utilisateurs.
-    \item \textbf{FeatureSettingProfile}: permet de changer les paramètres des fonctionnalitées.
+    \item \textbf{SettingProfile}: liste de paramètres de fonctionnalités pour un utilisateurs.
+    \item \textbf{FeatureSettingProfile}: permet de changer les paramètres des fonctionnalités.
     \item \textbf{AvaibleFeature}: fonctionnalités spécifiques à QiBates (comme la coloration des cellules, le fait de se connecter à certains cubes, etc.).
   \end{itemize}
 
@@ -752,13 +756,194 @@ adéquation avec l’environnement technique de l’entreprise (développement w
  \item en résultat attendu, faire une démonstration technique de l'application (interprétation de certaines lignes de codes)
 \end{itemize}
 \subsection{Présentation et réalisation de l'activité}
+\subsubsection{Introduction}
+Pour développer les microservices, j'ai utilisé Angular pour réaliser
+l'interface web, Spring Boot pour les API REST, et PostgreSQL comme
+SGBD. Ces technologies sont déjà utilisées pour nos microservices
+précédents, j'ai choisis de les réutiliser, car ayant déjà des
+connaissance avec, je peux aussi demander de l'aide aux autres
+collaborateurs en cas de problème, et notre stack technologique est
+uniforme dans notre infrastructure.
+
+\textbf{Angular} est un framework web utilisant TypeScript, conçu pour
+créer des applications interactives et dynamiques côté client. Il
+facilite la gestion des composants, de l'état de l'application et des
+interactions avec les données.
+
+\textbf{Spring Boot} est un framework Java qui simplifie la création
+d'applications robustes et évolutives en gérant automatiquement la
+configuration et en fournissant des fonctionnalités prêtes à l'emploi,
+comme la création de routes pour une API REST, un ORM, et des outils
+pour tester notre code.
+
+\textbf{PostgreSQL} est un système de gestion de base de données
+relationnelle open source, permettant de stocker et d'organiser des
+données de manière structurée, et sa fiabilité n'est plus à démontrer.
+\subsubsection{Structure des projets}
   \begin{figure}[H]
       \centering
       \includegraphics[scale=0.35,center]{screenshots/directories.png}
       \caption{Structure des dossiers pour deux microservices}
   \end{figure}
+J'ai utilisé la structure commune aux projets Spring Boot, pour une
+meilleure compréhension, une meilleure collaboration et une meilleure
+maintenance:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{main}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{java}: C'est ici que se trouve le code Java principal de
+    l'application.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{com.quartzinsight.ralph2.TITI}: C'est le package de base
+      de l'application.
+
+      \begin{itemize}
+      \tightlist
+      \item
+        \textbf{controller}: Contient les classes qui gèrent les
+        requêtes HTTP.
+      \item
+        \textbf{model}: Contient les classes représentant les entités de
+        données de l'application.
+      \item
+        \textbf{repository}: Contient les interfaces pour interagir avec
+        la base de données.
+      \item
+        \textbf{service}: Contient la logique métier de l'application.
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{resources}: Contient les fichiers de configuration et les
+  ressources statiques de l'application.
+\end{enumerate}
+
+J'ai aussi utilisé la même structure pour l'application Angular que dans
+la documentation officielle:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{app}: C'est le répertoire principal de l'application.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{core}: Contient les éléments centraux de l'application tels
+    que les services partagés et les intercepteurs HTTP.
+  \item
+    \textbf{components}: Contient les composants réutilisables de
+    l'application.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{add-user}: Un composant pour ajouter un nouvel
+      utilisateur.
+    \item
+      \textbf{domain-table}: Un composant pour afficher un tableau de
+      domaines.
+    \item
+      \textbf{footer}: Un composant pour le pied de page.
+    \item
+      \textbf{header}: Un composant pour l'en-tête.
+    \item
+      \textbf{profile-table}: Un composant pour afficher un tableau de
+      profils.
+    \item
+      \textbf{role-table}: Un composant pour afficher un tableau de
+      rôles.
+    \item
+      \textbf{user-table}: Un composant pour afficher un tableau
+      d'utilisateurs.
+    \end{itemize}
+  \item
+    \textbf{interfaces}: Contient les interfaces TypeScript utilisées
+    dans l'application.
+  \item
+    \textbf{views}: Contient les vues principales de l'application.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \textbf{domain-view}: Une vue pour afficher les détails d'un
+      domaine.
+    \item
+      \textbf{profile-view}: Une vue pour afficher les détails d'un
+      profil.
+    \item
+      \textbf{role-view}: Une vue pour afficher les détails d'un rôle.
+    \item
+      \textbf{user-view}: Une vue pour afficher les détails d'un
+      utilisateur.
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{assets}: Contient les ressources statiques de l'application,
+  comme les images.
+\item
+  \textbf{environments}: Contient les fichiers de configuration pour
+  différents environnements (par exemple, développement et production).
+\end{itemize}
+\subsubsection{Exemple de code}
+  \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.40,center]{screenshots/java-code.png}
+      \caption{Exemple de code d'un service Spring Boot renvoyant une liste de domaines}
+  \end{figure}
+Ce code utilise l'annotation Spring \texttt{@Autowired} pour injecter une instance
+de \texttt{DomainRepository} dans le service \texttt{DomainService}. Ce
+service récupère tous les domaines à partir de la base de données en
+utilisant la méthode \texttt{findAll()} du repository. Ensuite, pour
+chaque domaine, il crée un objet \texttt{DomainDTO} (Data Transfer
+Object), qui est une structure pour transporter les données. Les
+propriétés du domaine sont copiées vers le DTO à l'aide de
+\texttt{BeanUtils.copyProperties()}. En outre, les ID des utilisateurs
+associés sont ajoutés au DTO, et si le domaine a un groupe de
+fonctionnalités, le nom du groupe est défini dans le DTO. En fin de
+compte, une liste de DTOs de domaine est renvoyée.
+  \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.40,center]{screenshots/js-code.png}
+      \caption{Exemple de code d'un service Spring Boot renvoyant une liste de domaines}
+  \end{figure}
+Ce code Angular exécute les actions suivantes :
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Dans la méthode \texttt{ngOnInit()}, au démarrage du composant,
+  \texttt{fillDomainsTable()} est appelée pour remplir une table de
+  données de domaines.
+\item
+  La fonction \texttt{fillDomainsTable()} utilise
+  \texttt{domainTableService} pour obtenir des domaines via une requête
+  asynchrone. Une fois la réponse reçue, elle configure une source de
+  données de table (\texttt{MatTableDataSource}) avec les domaines pour
+  permettre le tri et la pagination.
+\item
+  \texttt{addRow()} ajoute une nouvelle ligne à la table. Elle crée un
+  nouvel objet avec des valeurs par défaut, le marque comme en cours
+  d'édition, et l'ajoute à la liste des données de la table. Ensuite, la
+  table est mise à jour pour refléter cette modification. Cette fonction
+  est utilisée pour ajouter de nouvelles entrées à une table éditable.
+\end{enumerate}
 \subsection{Contexte de réalisation}
+J'ai utilisé \textbf{Neovim} comme éditeur de code, \textbf{Maven} comme gestionnaire de builds et dépendances pour les microservices en Java (Version 17), et \textbf{Node.JS} / \textbf{NPM} comme runtime et gestionnaire de dépendances pour l'application Angular.
 \subsection{Conclusion sur l'activité}
+Cette compétence m'a permit de m'améliorer sur le développement, et de collaborer en équipe pour que les microservices soient en adéquation avec notre architecture actuelle et répondent aux besoins des utilisateurs.
+\newline
+\newline
+Le choix des technologies et langages est sujet à fort changement, en effet, depuis 10 ans, les technologies utilisées ont bien changées, et certaines comme Angular n'existaient pas.
 
 \section{Activité 7 - analyse de la qualité de la solution applicative et mise en place d’un plan de correction / d’amélioration}
 \subsection{Compétence et son fondement}
@@ -774,18 +959,96 @@ adéquation avec l’environnement technique de l’entreprise (développement w
   \item Résultat attendu : présenter les facteurs de la bonne testabilité de son plan de test
 \end{itemize}
 \subsection{Présentation et réalisation de l'activité}
+Pour vérifier la qualité de mon code, j'écrit des tests unitaires et
+d'intégration. Nous utilisons en interne un outil appelé SonarQube pour
+vérifier la qualité de notre code. Voici un exemple d'un test unitaire
+pour l'application Angular, ainsi que la page SonarQube associé à cette
+même application.
   \begin{figure}[H]
       \centering
       \includegraphics[scale=0.35,center]{screenshots/felix-test.png}
       \caption{Exemple de fausses données et d'un test unitaire les utilisant}
   \end{figure}
+Ce code comprend des tests unitaires pour un service. Dans le premier
+test, il vérifie si le service a été créé avec succès en utilisant le
+fournisseur \texttt{DomainTableService}. Ensuite, il simule
+l'utilisation de MirageJs pour gérer les requêtes HTTP en simulant des
+données de domaine similaires à ``client'': ``client 1'', ``domain'':
+``domain\_1'', etc. Dans le deuxième test, il vérifie si le service
+\texttt{getDomains()} est appelé à l'aide de \texttt{jest.spyOn()}. Le
+code utilise également \texttt{httpTestingController} pour simuler les
+requêtes HTTP et compare les données reçues avec les données de test
+définies. L'ensemble des tests est exécuté dans un environnement de test
+Angular grâce à \texttt{TestBed}.
+\newline
+\newline
+\textbf{MirageJS} est une bibliothèque JavaScript qui permet de simuler
+des appels API HTTP côté client lors des tests. Elle est
+particulièrement utile pour les tests unitaires et d'intégration, car
+elle permet de créer un faux backend et de définir des endpoints avec
+des données simulées, évitant ainsi les appels réels aux serveurs et les
+dépendances externes.
+
+Pour les tests sur les API REST, j'utilise des ``mocks'', des
+simulations de requêtes HTTP, grâce aux outils présents nativement dans
+Spring Starter Test.
   \begin{figure}[H]
       \centering
       \includegraphics[scale=0.35,center]{screenshots/felix-sonar.png}
       \caption{Logiciel de couverture de tests et d'analyse de code}
   \end{figure}
+\textbf{SonarQube} est un outil que nous intégrons dans notre processus
+d'intégration continue (CI). Il nous aide à évaluer la qualité de notre
+code en identifiant les problèmes potentiels et les opportunités
+d'amélioration. Pendant notre CI, SonarQube analyse notre code pour
+repérer les bugs, les vulnérabilités et les duplications, tout en
+mesurant la couverture des tests.
+\newline
+\newline
+Dans notre approche, nous exigeons qu'au moins \textbf{80\%} du code
+soit testé pour que notre pipeline de déploiement puisse fonctionner.
+Cette exigence garantit une meilleure stabilité de notre application et
+réduit les risques d'erreurs. L'intégration de SonarQube dans notre CI
+assure que notre code reste de qualité, sécurisé et conforme aux
+meilleures pratiques de développement.
+\newline
+\newline
+La capture d'écran présente les points suivants:
+\begin{itemize}
+\tightlist
+\item
+  85.12\% du code de l'application Angular est testé
+\item
+  Aucun bug n'est présent (erreur dans le code qui provoque un comportement
+  indésirable)
+\item
+  Aucun code smell n'est présent (indicateur suggérant la présence d'un
+  problème potentiel dans le code)
+\item
+  Il n'y a pas de code dupliqué
+\item
+  Aucun temps de dête technique c'est présent (temps à résoudre les
+  divers problèmes cités dans cette liste).
+\end{itemize}
 \subsection{Contexte de réalisation}
+J'ai utilisé les mêmes outils que pour l'acivité 6 pour écrire les tests
+unitaires, avec en plus:
+\begin{itemize}
+\tightlist
+\item
+  Jest comme framework de tests pour mon application Angular
+\item
+  Spring Starter Tests pour réaliser les tests sur les microservices
+  Angular.
+\end{itemize}
+Comme montré précédemment j'ai aussi utilisé SonarQube comme logiciel
+pour vérifier ma couverture de tests et la qualité du code que j'ai
+produit.
 \subsection{Conclusion sur l'activité}
+Comme pour l'activité 6, peut d'évolutions peuvent avoir lieu, sauf sur le plan technologique, avec des outils toujours plus performants et simple d'utilisations.
+\newline
+\newline
+Cette activité m'a permis d'améliorer ma compréhention des tests et de leur importance sur un projet architécturé en microservices. La prochaine étape est de réaliser des tests End-To-End, pour vérifier que les applications se comportent totalement comme désiré.
 
 \section{Activité 8 - mise en place d’une solution d’intégration continue}
 \subsection{Compétence et son fondement}
@@ -800,7 +1063,10 @@ adéquation avec l’environnement technique de l’entreprise (développement w
 \end{itemize}
 \subsection{Présentation et réalisation de l'activité}
 \subsubsection{Gitlab CI}
-TODO
+GitLab est une plateforme tout-en-un pour la gestion des projets et du code.
+Sa fonctionnalité GitLab CI/CD facilite l'intégration continue et le déploiement automatique.
+J'ai opté pour GitLab CI pour l'intégration continue car nous l'utilisons en interne, et sa prise en main, même pour un novice, est relativement simple.
+En effet, il s'agit de fichier YAML à écrire, est un format de donnée relativement simple à écrire, à l'aide de tabulations et de données "clefs-valeurs".
 \subsubsection{Pipeline d'un microservice du serveur pour l'API REST}
   \begin{figure}[H]
       \centering
@@ -994,7 +1260,12 @@ distribution automatisée de l'application, en passant par les tests et
 la création d'images Docker, tout en étant flexible grâce à des
 conditions et des déclencheurs spécifiques.
 \subsection{Contexte de réalisation}
+Cette activité, hormis les outils et leurs utilisations, n'a que peu de changement à venir dans son fonctionnement.
+Les améliorations disponibles seront une meilleure interface, surement à travers une page web, sans avoir à écrire un fichier au format YAML.
 \subsection{Conclusion sur l'activité}
+En concluant sur cette activité, j'ai pu utiliser GitLab CI/CD dans un cadre d'intégration continue.
+Cette solution a grandement facilité la gestion et l'automatisation de des tâches lors du dévelopement des microservices.
+La simplicité d'utilisation de GitLab CI/CD m'a permis de mettre en place les pipelines d'intégration continue, sans difficulté particulière.
 
 \section{Activité 9 - validation fonctionnelle et rédaction de la documentation pour les utilisateurs}
 \subsection{Compétence et son fondement}
@@ -1008,18 +1279,71 @@ conditions et des déclencheurs spécifiques.
   \item détailler avec une bonne qualité rédactionnelle la documentation utilisateur
 \end{itemize}
 \subsection{Présentation et réalisation de l'activité}
+  J'ai utilisé GitLab pour comparer la réalisation technique avec le
+cahier des charges en suivant ces étapes. Tout d'abord, j'ai créé des
+``issues'' pour chaque fonctionnalité décrite dans le cahier des
+charges. Ensuite, j'ai lié ces issues aux ``merge requests''
+correspondants dans lesquels les modifications techniques ont été
+apportées. Pendant le processus de développement, j'ai régulièrement mis
+à jour les états des issues pour refléter l'avancement. Une fois les
+développements terminés, j'ai procédé à des revues de code et de tests
+avec les membres de l'équipe pour s'assurer de la conformité de la
+réalisation avec les exigences du cahier des charges. Enfin, j'ai
+utilisé les fonctionnalités de suivi de GitLab, comme les tableaux
+Kanban et les rapports d'avancement, pour visualiser les progrès et
+m'assurer que chaque issue était liée à la réalisation technique
+correspondante.
   \begin{figure}[H]
       \centering
       \includegraphics[scale=0.35,center]{screenshots/issues-gitlab.png}
       \caption{Suivi des étapes clefs du développement sur Gitlab}
   \end{figure}
+  J'ai utilisé Docusaurus pour créer la documentation utilisateur. J'ai
+suivi ces étapes :
+
+\begin{enumerate}
+\item
+  \textbf{Installation et Configuration} : J'ai installé Docusaurus et
+  configuré le projet.
+\item
+  \textbf{Organisation du Contenu} : J'ai structuré la documentation en
+  sections basées sur les fonctionnalités, et les APIs.
+\item
+  \textbf{Rédaction en Markdown} : J'ai rédigé le contenu dans les fichiers
+  Markdown Extended, en incluant des images et des liens.
+\item
+  \textbf{Validation Utilisateur} : J'ai sollicité les retours des
+  membres du pôle R&D pour m'assurer de la clarté et de l'utilité du contenu.
+\item
+  \textbf{Publication en Ligne} : J'ai publié la documentation en ligne
+  pour offrir un accès facile aux utilisateurs.
+\end{enumerate}
+J'ai utilisé docusaurus qui permet la création d'une documentation
+simplement et accessible pour les utilisateurs.
+  \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.30,center]{screenshots/documentation.png}
+      \caption{Documentation utilisateur en ligne}
+  \end{figure}
 \subsection{Contexte de réalisation}
+J'ai donc utilisé Gitlab pour la gestion et le suivi de projet, et j'ai utilisé
+Docusaurus pour réaliser la documentation utilisateur et des APIs. Ces deux technologies
+sont open-source, et pour Gitlab nous utilisons la version hebergée mais gratuite.
 \subsection{Conclusion sur l'activité}
+La compétence liée à la validation fonctionnelle et à la rédaction de la
+documentation a évolué ces dix dernières années en raison de
+l'apparition de nouveaux outils de documentation et de collaboration en
+ligne.
+\newline
+\newline
+J'ai acquis des compétences en comparant la réalisation technique avec
+le cahier des charges grâce à l'utilisation de GitLab pour suivre les
+changements et les commentaires, sans rencontrer de grande difficulté,
+et en ayant été force de proposition pour l'utilisation de Docusaurus.
 
 \section{Activité 10 - formation des utilisateurs, mise en place d’une enquête de satisfaction ultérieure}
 \subsection{Compétence et son fondement}
 \textbf{Bloc de compétences}: A5 – Développement d’une solution applicative spécifique et métier selon le projet de développement S.I.
-\newline
 \textbf{Compétence choisie}: A5C8 - Conduire le changement auprès des métiers lors du déploiement d’une solution applicative ou intégrée en mettant en place une démarche de participation, de communication et de formation pour accompagner les utilisateurs à l’intégration du nouvel outil dans leurs habitudes de travail
 \newline
 \textbf{Détails}: Cette compétence consiste à démonter ma capacité à proposer un plan d’action de conduite de changement :
@@ -1029,9 +1353,87 @@ conditions et des déclencheurs spécifiques.
   \item mettre en application son plan de conduite de changement via un outil
 \end{itemize}
 \subsection{Présentation et réalisation de l'activité}
+\subsubsection{Actions sur 4 axes}
+Pour réussir la conduite du changement dans mon projet, j'ai mis en
+place des actions spécifiques sur les quatre axes clés :
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Informer} : J'ai élaboré des communications claires et
+  concises pour informer les utilisateurs (actuellement les membres du
+  pôle R\&D) des raisons du changement, de ses avantages et des étapes à
+  venir. J'ai utilisé des emails, des messages sur Microsoft Teams et
+  des réunions pour diffuser ces informations.
+\item
+  \textbf{Communiquer} : J'ai créé une communication continue en mettant
+  en place des canaux de discussion tels que des groupes de discussion
+  en ligne ou des sessions de questions-réponses, toujours avec
+  Microsoft Teams.
+\item
+  \textbf{Former} : J'ai organisé des sessions de formation adaptées aux
+  besoins des utilisateurs. Ces sessions ont couvert les fonctionnalités
+  clés de la nouvelle solution, avec des démonstrations pratiques et des
+  exercices. Cela a renforcé leur compréhension et leur confiance dans
+  l'utilisation du nouvel outil.
+\item
+  \textbf{Faire Participer} : J'ai encouragé la participation active des
+  utilisateurs tout au long du processus. J'ai sollicité leurs
+  commentaires lors des phases de test, en tenant compte de leurs
+  suggestions pour améliorer l'expérience utilisateur. Leur implication
+  a contribué à créer un sentiment d'appartenance au projet.
+\end{enumerate}
+\subsubsection{Présentation des outils de changement}
+Lors de la conduite du changement, j'ai exploré divers outils pour
+faciliter la transition en douceur vers la nouvelle solution. Deux de
+ces outils sont :
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{FutureWheel} : Le FutureWheel est un modèle visuel qui permet
+  aux individus et aux équipes de visualiser leurs objectifs futurs.
+  J'ai utilisé cet outil pour aider les utilisateurs à envisager les
+  avantages et les opportunités que la nouvelle solution apporterait à
+  leurs activités quotidiennes. Cela a permis de créer un sentiment
+  positif et d'anticiper les résultats positifs du changement.
+\item
+  \textbf{Modèle transactionnel de William Bridge} : Ce modèle propose
+  une approche pour gérer les émotions et les résistances liées au
+  changement. J'ai appliqué ce modèle pour aider les utilisateurs à
+  passer par les différentes étapes émotionnelles du changement, telles
+  que la phase de deuil pour ce qui est laissé derrière, la phase de
+  transition où ils se familiarisent avec le nouveau, et enfin la phase
+  d'acceptation.
+\end{enumerate}
+\subsubsection{Application d'un plan de conduite de changement}
+Dans mon projet, j'ai mis en pratique le Modèle transactionnel de
+William Bridge en organisant des sessions de sensibilisation et de
+discussions avec les membres du pôle R\&D. J'ai identifié leurs
+préoccupations, leurs résistances et leurs émotions vis-à-vis du
+changement. Ensuite, j'ai adapté ma communication en fonction de ces
+étapes émotionnelles, en fournissant des informations rassurantes et en
+expliquant les bénéfices concrets de la nouvelle solution. J'ai
+également encouragé la participation active des utilisateurs en leur
+offrant des opportunités de poser des questions, de partager leurs idées
+et de contribuer au processus. En utilisant ce modèle, j'ai pu aider les
+membres de l'équipe à surmonter leurs appréhensions et à embrasser le
+changement de manière plus positive et constructive.
 \subsection{Contexte de réalisation}
+J'ai réalisé ce plan avec les collaborateurs avec des communications
+synchrones (réunions en visioconférence) et asynchrones (par messages et
+emails), étant en télétravail la totalité du temps. Les outils utilisés
+sont donc Microsoft Teams et Outlook, ainsi que le modèle transactionnel
+de William Bridge comme cité précédemment.
 \subsection{Conclusion sur l'activité}
-
+Au cours des dernières années, la conduite du changement a évolué en
+raison des avancées technologiques et des nouvelles réglementations. Les
+évolutions à venir pourraient inclure une plus grande utilisation des
+plateformes en ligne pour la communication et la formation, ainsi qu'une
+adaptation aux méthodes de travail à distance.
+\newline
+\newline
+Pour mettre en place le plan de conduite de changement, je me suis aidé
+des compétences acquises en formation et des ressources fournies par les
+formateurs.
 \chapter{Conclusion}
 
 \section{Résumé}
